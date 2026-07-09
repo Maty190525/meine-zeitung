@@ -1,202 +1,553 @@
-<div class="main-content">
-    <div class="news-item">
-        <h1>Entschuldigung war nur Anfang: Orbans Lügenpresse bricht in sich zusammen</h1>
-        <p>In ungarischen Fernsehsendern rollen die Köpfe, die Günstlinge von Ex-Premier Orban müssen gehen. Besiegelt wird der Neuanfang mit einer öffentlichen Entschuldigung für all die Lügen während Orbans Amtszeit. Doch der Wandel reicht weiter – bis hinein in die Finanzströme von Fidesz.</p>
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { width: 1060px; height: 1520px; background-color: #fcfaf5; font-family: 'Times New Roman', Times, serif; padding: 25px; margin: 0; color: #111111; display: flex; flex-direction: column; justify-content: space-between; }
+        .newspaper-header { text-align: center; border-bottom: 5px solid #111111; padding-bottom: 10px; margin-bottom: 25px; }
+        .newspaper-title { font-size: 78px; font-weight: bold; margin: 0; line-height: 1; }
+        .newspaper-date { font-size: 20px; font-style: italic; font-weight: bold; margin-top: 8px; color: #444444; text-transform: uppercase; }
+        .main-content { display: flex; flex-direction: column; justify-content: space-between; flex: 1; overflow: hidden; margin-bottom: 20px; }
+        .news-item { border-bottom: 1px solid #cccccc; padding-bottom: 20px; margin-bottom: 15px; }
+        .news-header-block { display: flex; gap: 25px; align-items: flex-start; }
+        .news-image { width: 360px; height: 220px; border: 1px solid #111111; object-fit: cover; flex-shrink: 0; }
+        .ressort { color: #8b0000; font-size: 12px; text-transform: uppercase; font-weight: bold; margin-bottom: 5px; }
+        h1 { font-size: 26px; line-height: 1.2; margin: 0 0 8px 0; }
+        p { font-size: 15.5px; line-height: 1.45; color: #222222; margin: 0; text-align: justify; }
+        .daughter-zone { border-top: 4px double #8b0000; padding-top: 20px; margin-bottom: 25px; }
+        .gallery-container { display: flex; justify-content: space-between; gap: 15px; }
+        .funny-animal-image { width: 335px; height: 215px; border: 1px solid #111111; object-fit: cover; border-radius: 4px; }
+        .bottom-market-zone { border-top: 4px solid #111111; padding-top: 12px; margin-top: auto; }
+        .ticker-wrapper { width: 100%; height: 72px; border: 1px solid #111111; background: #ffffff; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+    <div class="newspaper-header">
+        <div class="newspaper-title">Merseburger Post</div>
+        <div class="newspaper-date" id="live-date"></div>
     </div>
-    <div class="news-item">
-        <h1>Marschflugkörper schließen Lücke: Der Tomahawk-Kauf ist ein perfekter Trump-Deal - und ein Signal an Moskau</h1>
-        <p>Die Europäer sollen gefälligst für ihre eigene Sicherheit zahlen, lautet das Mantra von US-Präsident Trump. Was das konkret bedeutet, zeigt sich beim deutschen Tomahawk-Kauf. Die Marschflugkörper schließen eine Lücke - bis die Europäer endlich aus dem Knick kommen.</p>
+
+    <script>
+        document.getElementById('live-date').innerText = new Date().toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+
+    <div class="main-content">
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068711&#x2F;1783614445&#x2F;Img_4_3&#x2F;250&#x2F;A-television-set-in-a-hotel-room-shows-Hungarian-Prime-Minister-Viktor-Orban-during-a-televised-appearance-in-Budapest-Hungary-on-April-10-2026.jpg">
+                <div>
+                    <h1>Entschuldigung war nur Anfang: Orbans Lügenpresse bricht in sich zusammen</h1>
+                    <p>In ungarischen Fernsehsendern rollen die Köpfe, die Günstlinge von Ex-Premier Orban müssen gehen. Besiegelt wird der Neuanfang mit einer öffentlichen Entschuldigung für all die Lügen während Orbans Amtszeit. Doch der Wandel reicht weiter – bis hinein in die Finanzströme von Fidesz.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068248&#x2F;1783610456&#x2F;Img_4_3&#x2F;250&#x2F;FILE-A-Tomahawk-cruise-missile-is-fired-off-the-battleship-USS-Wisconsin-towards-a-target-in-Iraq-in-the-Persian-Gulf-on-Jan-17-1991-Japan-s-defense-spending-will-jump-20-to-a-record-6-8-trillion-yen-55-billion-next-year-as-the-country-prepares-to-deploy-U-S-made-Tomahawks-and-other-long-range-cruise-missiles-that-can-hit-targets-in-China-or-North-Korea-under-a-more-offensive-security-strategy.jpg">
+                <div>
+                    <h1>Marschflugkörper schließen Lücke: Der Tomahawk-Kauf ist ein perfekter Trump-Deal - und ein Signal an Moskau</h1>
+                    <p>Die Europäer sollen gefälligst für ihre eigene Sicherheit zahlen, lautet das Mantra von US-Präsident Trump. Was das konkret bedeutet, zeigt sich beim deutschen Tomahawk-Kauf. Die Marschflugkörper schließen eine Lücke - bis die Europäer endlich aus dem Knick kommen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068149&#x2F;1783609398&#x2F;Img_4_3&#x2F;250&#x2F;09-07-2026-Niedersachsen-Zwickau-Beschaeftigte-von-Volkswagen-beteiligen-sich-an-einer-Informations-und-Protestaktion-der-IG-Metall-vor-dem-VW-Werk-in-Zwickau-Am-Tag-der-Aufsichtsratssitzung-der-Volkswagen-AG-in-Wolfsburg-organisiert-die-IG-Metall-bundesweit-Informations-und-Protestaktionen-an-zahlreichen-Standorten-des-Konzerns.jpg">
+                <div>
+                    <h1>&quot;Darwin&#39;scher Ausleseprozess&quot;: Nur so kann der VW-Konzern überleben</h1>
+                    <p>Wer sich jetzt nicht schnell anpasst, wird vom Markt verschwinden. Die Kosten zu senken, ist für die deutschen Autobauer unabdingbar - aber nur ein Brandherd von vielen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067974&#x2F;1783607439&#x2F;Img_4_3&#x2F;250&#x2F;RUSSIA-JULY-3-EDITORIAL-USE-ONLY-MANDATORY-CREDIT-KREMLIN-PRESS-SERVICE-HANDOUT-NO-MARKETING-NO-ADVERTISING-CAMPAIGNS-DISTRIBUTED-AS-A-SERVICE-TO-CLIENTS-A-screen-grab-taken-from-a-video-shows-Russian-President-Vladimir-Putin-during-a-military-meeting-with-Chief-of-the-General-Staff-of-the-Russian-Armed-Forces-Valery-Gerasimov-and-senior-troop-commanders-at-a-command-center-of-the-Joint-Group-of-Forces-in-Russia-on-July-03-2026.jpg">
+                <div>
+                    <h1>Kreml gegen Friedensgespräche?: Insider rechnen mit Eskalation durch Putin</h1>
+                    <p>US-Präsident Trump erzählt gerne, dass auch Moskau Frieden will. Drei dem Kreml nahestehende Personen sehen das ganz anders. Und russische Militärexperten diskutieren zunehmend über eine Ausweitung des Krieges.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069018&#x2F;1783618924&#x2F;Img_4_3&#x2F;250&#x2F;HMxjcZuXoAAQXsh.jpg">
+                <div>
+                    <h1>Mann entzieht sich Militärdienst: Ukrainische Politiker fordern Konsequenzen nach Angriff auf Armee-Rekrutierer</h1>
+                    <p>In ihrem Kampf gegen die russische Invasion verzeichnet die Ukraine jüngst einige Erfolge. Viele Ukrainer wehren sich aus Angst vor dem Dienst an der Front jedoch erbittert gegen Zwangsrekrutierungen auf offener Straße. Bei einem Vorfall in Lwiw gehen 200 Menschen gegen das Militär vor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069149&#x2F;1783622779&#x2F;Img_4_3&#x2F;250&#x2F;Andy-Burnham-on-LBC-Andy-Burnham-during-an-appearance-on-the-Tonight-with-Andrew-Marr-show-on-LBC-radio-from-the-Global-studios-at-Millbank-central-London-Picture-date-Thursday-July-2-2026.jpg">
+                <div>
+                    <h1>Entschuldigung wegen Gaza-Krieg: Designierter britischer Premier will Israel stärker unter Druck setzen</h1>
+                    <p>Andy Burnham dürfte demnächst Großbritannien regieren. Dafür braucht der Labour-Politiker auch die Unterstützung seiner Partei, die sich im Hinblick auf den britischen Umgang mit Israel entzweit hat. Burnham bittet wegen der Haltung zu Gaza um Entschuldigung - wohl auch für Worte des aktuellen Premiers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069322&#x2F;1783627748&#x2F;Img_4_3&#x2F;250&#x2F;People-demonstrate-outside-the-Moultrie-Courthouse-before-the-arraignment-of-Olympic-canoeist-David-Hearn-in-Washington-DC-on-Thursday-June-9-2026-Hearn-was-indicted-on-July-2-on-one-count-of-destruction-of-property-of-more-than-1-000-for-allegedly-damaging-the-Lincoln-Memorial-Reflecting-Pool-carrying-a-maximum-pentyl-of-10-years-in-prison-if-convicted.jpg">
+                <div>
+                    <h1>&quot;Sündenbock&quot; für Trump-Pfusch?: Ex-Olympionike vor Gericht: Farce um Reflecting Pool geht weiter</h1>
+                    <p>David Hearn vertrat die USA mehrfach bei Olympischen Spielen. Nun drohen ihm bis zu zehn Jahre Haft, weil er in ein Wasserbecken in Washington gegriffen hat, dessen missglückte Renovierung den US-Präsidenten auf die Palme bringt. Der Anwalt des Angeklagten findet deutliche Worte. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067422&#x2F;1783612339&#x2F;Img_4_3&#x2F;250&#x2F;Juergen-Klopp-geht-nicht-ohne-Bedingungen-in-die-Bundestrainer-Gespraeche.jpg">
+                <div>
+                    <h1>Bundestrainer bis 2030: Details zu Klopps DFB-Vertrag durchgesickert - Ablöse für Red Bull offen</h1>
+                    <p>Noch bevor die DFB-Bosse in New York mit Wunsch-Bundestrainer Jürgen Klopp zusammentreffen, sickern erste Details über dessen Vertrag durch. Offen ist, wie weit der DFB und Klopps Noch-Arbeitgeber Red Bull bereits sind.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068462&#x2F;1783612195&#x2F;Img_4_3&#x2F;250&#x2F;A-gun-gifted-by-Turkish-President-Recep-Tayyip-Erdogan-to-Belgium-s-Prime-Minister-Bart-De-Wever-at-NATO-summit-in-Ankara.jpg">
+                <div>
+                    <h1>&quot;Irrsinnige&quot; Szenen nach Landung: Erdogans Revolver-Geschenk bringt Nato-Partner in Verlegenheit</h1>
+                    <p>Mit einem Revolver als Gastgeschenk sorgt Präsident Erdogan beim Nato-Gipfel für erstaunte Gesichter. Mehrere Staats- und Regierungschefs müssen sich um den legalen Transport der Waffe kümmern. Über die Symbolik wird spekuliert.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31066308&#x2F;1783592093&#x2F;Img_4_3&#x2F;250&#x2F;Lupita-Nyong-o-at-The-Odyssey-world-film-premiere-Odeon-Luxe-Leicester-Square-Leicester-Square-on-Monday-06-July-2026-in-London-England-UK.jpg">
+                <div>
+                    <h1>Berlin Tag &amp; Macht: MERZ. Demnächst im Kino! FSK: 67</h1>
+                    <p>Großes Budget, prominente Darsteller, jahrelange Irrfahrt und ein Mann, der unbedingt ans Ziel will: Die Parallelen zwischen &quot;Die Odyssee&quot; und der Bundesregierung sind frappierend. Nur: Christopher Nolan hat ein Drehbuch, Friedrich Merz nur einen Koalitionsvertrag.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069141&#x2F;1783622677&#x2F;Img_4_3&#x2F;250&#x2F;Be-eri-Israel-Reise-des-Bundespraesidenten-nach-Israel-Soldaten-der-israelischen-Armee-mit-Maschinengewehren-sichern-den-Staatsbesuch-ab.jpg">
+                <div>
+                    <h1>Soldatin und Palästinenser: Israelische Polizei vermutet Entführung und stößt auf Liebespaar</h1>
+                    <p>Im Westjordanland lösen eine israelische Soldatin und ein Palästinenser einen Polizeieinsatz aus. Sicherheitskräfte vermuten zunächst eine Entführung, doch tatsächlich sind die beiden ein Paar. Für die Soldatin könnte die Beziehung Konsequenzen haben.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;30175267&#x2F;1783624518&#x2F;Img_4_3&#x2F;250&#x2F;MLS-Fussball-Herren-USA-Vancouver-Whitecaps-FC-at-Orlando-City-Oct-11-2025-Orlando-Florida-USA-Vancouver-Whitecaps-forward-Thomas-Mueller-13-reacts-after-a-play-against-Orlando-City-in-the-second-half-at-Inter-Co-Stadium.jpg">
+                <div>
+                    <h1>Mal kurz knipsen gehen: Thomas Müllers kurioser Blitz-Abschied von der WM</h1>
+                    <p>Thomas Müller ist eigentlich voll im WM-Stress: Die deutsche Fußball-Legende ordnet als Experte das Geschehen ein und fiebert bei den Spielen voll mit. Doch den freien Tag nutzt er für einen Ausflug in eigener Sache. Und das erfolgreich.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069177&#x2F;1783623315&#x2F;Img_4_3&#x2F;250&#x2F;firo-06-07.jpg">
+                <div>
+                    <h1>&quot;Weitaus schwerwiegender&quot;: Weißes Haus attackiert Starmer nach Anstoß-Intervention</h1>
+                    <p>Die Trump-Regierung verteidigt weiterhin rigoros ihr Vorgehen im Fall Balogun. Aus Sicht des Chefs der dortigen WM-Taskforce gibt es einen Fall, viel &quot;schwerwiegenderer&quot; politischer Einflussnahme auf die FIFA. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067635&#x2F;1783603558&#x2F;Img_4_3&#x2F;250&#x2F;Group-of-elderly-Sardinian-villagers-talking-on-the-street-Sardinia-Italy-May-5-2018-group-of-male-elderly-Sardinian-villages-talking-on-the-street.jpg">
+                <div>
+                    <h1>&quot;Blaue Zone&quot; auf Sardinien: Neuer Faktor für gesundes Altern identifiziert</h1>
+                    <p>Die meisten Menschen wollen gesund lange leben. In den sogenannten &quot;Blauen Zonen&quot; gelingt das überdurchschnittlich vielen. Das könnte auch mit bestimmten Persönlichkeitsmerkmalen in Verbindung stehen, wie Forschende aktuell berichten. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069314&#x2F;1783627460&#x2F;Img_4_3&#x2F;250&#x2F;Ein-handgehaltenes-Protestschild-mit-der-Aufschrift-4-5-weniger-Honorar-0-Respekt-100-inakzeptabel-ist-bei-einer-Demonstration-gegen-Kuerzungen-der-Verguetung-psychotherapeutischer-Leistungen-zu-sehen-Der-Hintergrund-mit-weiteren-Teilnehmenden-ist-unscharf-Protest-von-Psychotherapeuten-gegen-Honorarkuerzungen-Nuernberg-21-03.jpg">
+                <div>
+                    <h1>Klage erfolgreich: Gericht stoppt vorerst Honorarkürzung bei Psychotherapeuten</h1>
+                    <p>Die geplante Absenkung der Honorare für Psychotherapeuten sorgt für massive Kritik. Nun legt ein Gericht den Plan vorerst auf Eis. Die Richter äußern Zweifel an den Berechnungsmethoden.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069237&#x2F;1783624757&#x2F;Img_4_3&#x2F;250&#x2F;Pump-jack-with-a-drilling-rig-in-the-background-in-a-flowering-canola-field.jpg">
+                <div>
+                    <h1>Staaten bunkern: Experten erwarten hohe Öl-Nachfrage bis 2028 durch Regierungen</h1>
+                    <p>Angesichts des zusammengebrochenen Schiffsverkehrs in der der Straße von Hormus geben Regierungen in aller Welt einen Teil ihrer strategischen Ölreserven frei. Deren Auffüllung wird einige Zeit dauern und so Nachfrage und Preis hochhalten. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069305&#x2F;1783626793&#x2F;Img_4_3&#x2F;250&#x2F;Fussball-La-Liga-35-Spieltag-FC-Barcelona-Real-Madrid-am-10-05-2026-im-Spotify-Camp-Nou-in-Barcelona-Der-FC-Barcelona-mit-Hans-Dieter-Hansi-Flick-Trainer-Cheftrainer-Barcelona-ist-zum-29.jpg">
+                <div>
+                    <h1>Geldregen für Flick-Klub: FC Barcelona verhökert die Zukunft für XXL-Transferoffensive</h1>
+                    <p>Der FC Barcelona ist chronisch knapp bei Kasse und hat doch große Transferziele. Um die zu finanzieren, greift der katalanische Verein nun offenbar auf einen lukrativen Trick zurück.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069008&#x2F;1783618651&#x2F;Img_4_3&#x2F;250&#x2F;Slovenian-Tadej-Pogacar-of-UAE-Team-Emirates-XRG-pictured-in-action-during-stage-6-of-the-2026-Tour-de-France-cycling-race-a-stage-of-186-km-from-Pau-to-Gavarnie-Gedre-on-Thursday-09-July-2026-The-113th-edition-of-the-Tour-de-France-starts-on-Saturday-4-July-in-Barcelona-Spain-and-will-finish-in-Paris-France-on-the-26th-of-July.jpg">
+                <div>
+                    <h1>Tour-Führender stürzt: Rad-Gigant Pogacar zerlegt Konkurrenz in Pyrenäen gnadenlos</h1>
+                    <p>Tadej Pogacar zerstört früh auch die leisesten Hoffnungen der Konkurrenz, dass der Rad-Gigant bei der Tour de France schlagbar sein könnte. Schon auf der 6. Etappe zerlegt der Slowene die Konkurrenz.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069262&#x2F;1783625333&#x2F;Img_4_3&#x2F;250&#x2F;Tennis-Wimbledon-All-England-Lawn-Tennis-and-Croquet-Club-London-Britain-July-9-2026-Czech-Republic-s-Karolina-Muchova-celebrates-after-winning-her-semi-final-match-against-Coco-Gauff-of-the-U-S.jpg">
+                <div>
+                    <h1>US-Star Gauff dramatisch besiegt : Tschechinnen haben den Heiligen Rasen im Finale für sich</h1>
+                    <p>Die All England Championships in Wimbledon werden zu den All Czech Championships. Zuerst wirft Karolina Muchova US-Star Coco Gauff raus, dann folgt ihr Linda Noskova durch einen Sieg gegen die Ukrainerin Marta Kostjuk ins Endspiel des Rasenklassikers. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068923&#x2F;1783617122&#x2F;Img_4_3&#x2F;250&#x2F;health-medicine-and-pandemic-concept-female-doctor-or-nurse-wearing-protective-medical-mask-and-gloves-with-syringe-vaccinating-male-patient-at-hospital-Modellfreigabe-vorhanden.jpg">
+                <div>
+                    <h1>Genug Erwachsene immunisiert: Stiko hebt allgemeine Impfempfehlung für Corona auf</h1>
+                    <p>Seit der Entwicklung von Impfstoffen während der Corona-Pandemie empfahl die Ständige Impfkommission (Stiko) allen Erwachsenen eine Impfung. Doch damit ist nun Schluss. Nur für wenige Gruppen bleibt die Empfehlung bestehen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068032&#x2F;1783608064&#x2F;Img_4_3&#x2F;250&#x2F;Abnehmspritzen-der-Firma-Eli-Lilly-mit-dem-Namen-Mounjaro-und-dem-Wirkstoff-Tirzepatid-in-verschiedenen-Dosierungen-liegen-aufgereiht-auf-einem-Tisch.jpg">
+                <div>
+                    <h1>Studie vergleicht Schlankmacher: Effektivste Abnehmmedikamente haben die meisten Nebenwirkungen</h1>
+                    <p>Abnehmmedikamente werden in den vergangenen Jahren auch als Lifestyle-Produkte immer beliebter. Allein die Spritze Ozempic erfährt auf Social Media und in der Popkultur zuletzt einen kontroversen Hype. Doch wie effektiv sind die Medikamente wirklich - und wie gesund?</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068255&#x2F;1783610528&#x2F;Img_4_3&#x2F;250&#x2F;Kraefte-der-bayerischen-Polizei-stehen-am-Welfen-Gymnasium.jpg">
+                <div>
+                    <h1>Amoktat an Gymnasium in Schongau: Ministerin lobt Schüler: Mädchen wäre wahrscheinlich verblutet</h1>
+                    <p>An einem Gymnasium in Schongau geht ein 16-Jähriger mit einem Messer auf zwei Mädchen los und verletzt sie schwer. Bayerns Kultusministerin Stolz lobt das Verhalten der Schüler, die nach der Tat Hilfe leisteten. Ohne diesen Einsatz hätte eines der Opfer wohl nicht überlebt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067966&#x2F;1783610299&#x2F;Img_4_3&#x2F;250&#x2F;Verbraucherschutz-gestaerkt-Das-OLG-Bamberg-entschied-dass-Klauseln-die-einseitige-Kuendigungen-durch-Anbieter-erlauben-Verbraucher-unangemessen-benachteiligen.jpg">
+                <div>
+                    <h1>Urteil zu Unlimited-Tarifen: Darf Mobilfunkanbieter Vertrag jederzeit einseitig kündigen?</h1>
+                    <p>Ist es nicht der Grundsatz von Verträgen, dass sie für beide Seiten gelten? Nein, befand ein Mobilfunkanbieter bei der Kündigung von Tarifen mit unbegrenztem Datenvolumen. Nun gibt es ein OLG-Urteil.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067498&#x2F;1783602150&#x2F;Img_4_3&#x2F;250&#x2F;06-05.jpg">
+                <div>
+                    <h1>Bye bye, WM: Moderatorin Lea Wagner beginnt Babypause</h1>
+                    <p>Noch am Dienstag begleitet Moderatorin Lea Wagner das WM-Spiel zwischen Argentinien und Ägypten mit praller Babykugel. Nun verabschiedet sie sich jedoch noch vor dem ersten Viertelfinale von dem Turnier - in den Mutterschutz.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068827&#x2F;1783615857&#x2F;Img_4_3&#x2F;250&#x2F;Die-Saengerin-Bonnie-Tyler-singt-waehrend-eines-Konzerts-der-Tour-40-Jahre-Total-Eclipse-of-the-Heart-im-Admiralspalast.jpg">
+                <div>
+                    <h1>Von Bohlen bis König Carl Gustaf: Die Trauer um Bonnie Tyler ist riesig</h1>
+                    <p>Der Tod von Bonnie Tyler bewegt viele Menschen - in Deutschland ebenso wie im Ausland. Zahlreiche Kollegen, Wegbegleiteter und prominente Fans melden sich zu Wort, um der Sängerin die letzte Ehre zu erweisen. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068366&#x2F;1783611317&#x2F;Img_4_3&#x2F;250&#x2F;schaefer2.jpg">
+                <div>
+                    <h1>Zusammen beim RTL-Fest: Micaela Schäfer präsentiert ihren neuen Freund</h1>
+                    <p>Wenn RTL in Berlin zum Sommerfest ruft, kommen (fast) alle. Micaela Schäfer zum Beispiel. Und die &quot;Nacktschnecke&quot; hat sogar noch eine Überraschung im Gepäck: ihren neuen Freund.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067019&#x2F;1783597667&#x2F;Img_4_3&#x2F;250&#x2F;Achim-Wolff-bei-der-Premiere-des-Theaterstuecks-Stasi-Stress-und-Stolperfallen-im-Schlosspark-Theater-Berlin-07-09.jpg">
+                <div>
+                    <h1>Bühnenrollen und Kinderfernsehen: Schauspieler Achim Wolff ist tot</h1>
+                    <p>Die ZDF-Sitcom &quot;Salto Postale&quot; und die Kinderserie &quot;Beutolomäus&quot; machen Achim Wolff dem breiten Fernsehpublikum bekannt. Nun ist der Schauspieler mit 87 Jahren nach schwerer Krankheit gestorben.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;30815108&#x2F;1778603569&#x2F;Img_4_3&#x2F;250&#x2F;Bonnie-Tyler-startet-ihre-Karriere-in-den-70er-Jahren-Nach-einer-Stimmband-OP-entstand-ihre-typische-raue-Stimme-Mit-der-Single-Its-a-Heartache-landete-sie-ihren-ersten-Welthit-und-damit-ihre-heutige-Karriere-von-ueber-50-Jahren.jpg">
+                <div>
+                    <h1>Reibeisenstimme ist verstummt: Trauer um Sängerin Bonnie Tyler </h1>
+                    <p>Mit Hits wie &quot;Total Eclipse of the Heart&quot; oder &quot;Holding out for a Hero&quot; prägt Bonnie Tyler mit ihrer Reibeisenstimme die Rockmusik der 80er-Jahre. Nach einer Not-OP im Mai erholt sich die Sängerin nicht mehr. Nun gibt ihr Management ihren Tod bekannt. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067476&#x2F;1783601847&#x2F;Img_4_3&#x2F;250&#x2F;Ralph-Siegel-mit-Ehefrau-Laura-Siegel-bei-der-Auszeichnung-mit-dem-Bayerischen-Maximiliansorden-durch-Ministerpraesident-Dr-Markus-Soeder-im-Antiquarium-der-Muenchner-Residenz-Muenchen-03-12.jpg">
+                <div>
+                    <h1>Er erkennt seine Hits im Koma: Familie schöpft Hoffnung bei Ralph Siegel</h1>
+                    <p>Ralph Siegel kämpft weiter auf der Intensivstation. Während der Komponist im künstlichen Koma liegt, berichten seine Angehörigen von ersten Reaktionen - und hoffen nun auf den nächsten entscheidenden Schritt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31061036&#x2F;1783502439&#x2F;Img_4_3&#x2F;250&#x2F;Das-Fahrzeugsegment-empfiehlt-sich-vor-allem-als-besonders-guenstige-Mobilitaetsalternative.jpg">
+                <div>
+                    <h1>Chinakracher gegen Herausforderer: Segway Max G3 D vs. Navee UT5 Max - E-Kickscooter im Vergleichstest</h1>
+                    <p>Größer, stärker, ausdauernder: Der Navee UT5 Max tritt mit eindrucksvollen Daten gegen den erfolgreichen Segway Max G3 D an. Doch im Alltag zählt mehr als Größe und Leistung. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068769&#x2F;1783615098&#x2F;Img_4_3&#x2F;250&#x2F;Kai-Wegner-CDU-Regierender-Buergermeister-von-Berlin-kommt-zur-Plenarsitzung-im-Berliner-Abgeordnetenhaus.jpg">
+                <div>
+                    <h1>Neuer Kandidat für Wahl?: Berliner CDU berät bei Krisentreffen über Wegner</h1>
+                    <p>Die Berliner CDU fällt in Umfragen wenige Monate vor der Abgeordnetenhauswahl weiter zurück. Spitzenkandidat und Regierungschef Wegner muss immer wieder Aussagen zu seinem Agieren beim Blackout korrigieren. Nun könnte die Partei die Reißleine ziehen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068506&#x2F;1783612490&#x2F;Img_4_3&#x2F;250&#x2F;Europaflaggen-wehen-vor-dem-Sitz-der-EU-Kommission.jpg">
+                <div>
+                    <h1>Missbrauchsmaterial im Internet: EU-Parlament stimmt nun doch für umstrittene Chatkontrolle</h1>
+                    <p>Eigentlich stimmt das EU-Parlament gegen das Scannen privater Chats auf kinderpornografische Inhalte. Doch die Parlamentspräsidentin bringt das Thema nach Kritik zurück auf die Agenda - ein Vorgehen, ebenso umstritten wie das Chat-Scanning. Nun ist eine Entscheidung gefallen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067929&#x2F;1783606987&#x2F;Img_4_3&#x2F;250&#x2F;traurig-geschwister-scheidungskind-Bildverwendung-nur-mit-Urhebervermerk-Pawel-Opaska-Shotshop-picture-alliance-Keine-Exlusivverkaeufe-moeglich.jpg">
+                <div>
+                    <h1>Geplanter Bürokratieabbau: Bundestag macht Weg für Kindergeld ohne Antrag frei</h1>
+                    <p>Die Zeit nach der Geburt ist für Familien herausfordernd. Die Koalition will Eltern nun zumindest beim Kindergeld entlasten. Dieses soll künftig ohne Antrag automatisch ausgezahlt werden - wenn Bedingungen erfüllt sind.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069084&#x2F;1783620504&#x2F;Img_4_3&#x2F;250&#x2F;Gaskraftwerk-Irsching-am-17-05-2026-in-Vohburg-an-der-Donau-UBz-Die-beiden-Bloecke-des-Gaskraftwerk-Irsching-haben-nur-sehr-geringe-Betriebsstunden-pro-Jahr-Der-dritte-Block-frueher-mit-Oel-befeuert-wurde-bereits-vor-vielen-Jahren-stillgelegt-AL-Allgemeines-Bild-Allgemeines-Foto-Symboldbild-Symbolfoto.jpg">
+                <div>
+                    <h1>&quot;Sicherheitsgurt&quot; für Versorgung: Koalition ebnet Weg für neue Gaskraftwerke</h1>
+                    <p>Scheint keine Sonne und bläst kein Wind, sollen Gaskraftwerke die deutsche Stromversorgung sichern. Die Koalition verbesserte nun die Anreize für Unternehmen, solche Werke zu bauen. Auf Stromkunden kommen deswegen neue Kosten zu.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067742&#x2F;1783604777&#x2F;Img_4_3&#x2F;250&#x2F;Kulisse-des-Stahlwerk-HKM-Huettenwerke-Krupp-Mannesmann-Hochoefen-Gasometer-Loeschturm-der-Kokerei-Loeschwolke-NRW-Duisburg-Deutschland.jpg">
+                <div>
+                    <h1>&quot;Notwendiger Schritt&quot;: Salzgitter kauft Stahlfirma HKM und streicht 2000 Jobs</h1>
+                    <p>Die Bereinigung in der deutschen Stahlindustrie geht weiter. Thyssenkrupp trennt sich von seinem Anteil an den Hüttenwerken Krupp Mannesmann. Auch der französische Eigner zieht sich zurück. Salzgitter greift als neuer Alleinbesitzer durch und setzt auf das Thema grüner Stahl.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067381&#x2F;1783600926&#x2F;Img_4_3&#x2F;250&#x2F;Der-Hamburger-Mehrzweckfrachter-Basilisk-war-2024-vor-dem-ostafrikanischen-Somalia-von-Piraten-gekapert-worden.jpg">
+                <div>
+                    <h1>&quot;Historischer Rückgang&quot;: Zahl der Piratenangriffe fällt auf niedrigsten Stand seit 1992</h1>
+                    <p>Schiffe werden geentert und die Besatzung als Geiseln genommen: 38 Piratenangriffe zählt das Internationale Schifffahrtsbüro im ersten Halbjahr - so wenige wie seit mehr als 30 Jahren nicht mehr. Doch Grund zur Entwarnung gibt es wohl nicht.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31069152&#x2F;1783622835&#x2F;Img_4_3&#x2F;250&#x2F;260320_Ringside_Zone_Frank_Morlok_3509_web.jpg">
+                <div>
+                    <h1>Kadiru kann&#39;s nicht glauben: Deutschland winkt ein Weltmeister aus dem Nichts</h1>
+                    <p>Peter Kadiru erhält aus dem Nichts die Chance seines Lebens - der Hamburger boxt am Wochenende um den WM-Titel im Schwergewicht. Das liegt an mehreren (un)glücklichen Umständen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067078&#x2F;1783598114&#x2F;Img_4_3&#x2F;250&#x2F;Bundestrainer-Hans-Dieter-Hansi-FLICK-GER-mit-Karim-ADEYEMI-GER-vor-Einwechslung-Fussball-Laenderspiel-WM-Qualifikation-Gruppe-J-Spieltag-5-Deutschland-Armenien-6-0-am-05-09-2021-in-Stuttgart-Mercedes-Benz-Arena.jpg">
+                <div>
+                    <h1>Zurück zu Hansi Flick: Wechselt BVB-Sünder Adeyemi in seine persönliche Wohlfühloase?</h1>
+                    <p>Als Bundestrainer ist Hansi Flick einer der Förderer von Karim Adeymi. Nun könnten die beiden wieder zusammenarbeiten - wenn denn der BVB-Profi zum FC Barcelona wechselt. Das hätte auch für die Dortmunder Vorteile. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;3942401&#x2F;1783615810&#x2F;Img_4_3&#x2F;250&#x2F;2010-08-10T174750Z-01-ACO01-RTRMDNP-3-SOCCER-SPAIN-JPG7287291365977094371.jpg">
+                <div>
+                    <h1>Khediras Rückkehr: Deutscher WM-Held wird Mourinhos Co-Trainer bei Real Madrid</h1>
+                    <p>Sami Khedira wird künftig bei Real Madrid an der Seite von Star-Coach José Mourinho arbeiten. Der deutsche Rio-Weltmeister feiert damit nach elf Jahren seine Rückkehr zum Weltklub.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31065635&#x2F;1783583539&#x2F;Img_4_3&#x2F;250&#x2F;FILE-PHOTO-Soccer-Football-FIFA-World-Cup-2026-Round-of-32-England-v-DR-Congo-Atlanta-Stadium-Atlanta-Georgia-U-S.jpg">
+                <div>
+                    <h1>Englands Schattenmann: Thomas Tuchel hat endlich den Spieler, den er immer haben wollte</h1>
+                    <p>150-Millionen-Mann Elliot Anderson sorgt im Schatten von Superstürmer Harry Kane für Ordnung in Englands Mittelfeld. Thomas Tuchel schwört auf den Abräumer. Wird er der Trumpf im Kampf gegen das ewige WM-Leid?</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067424&#x2F;1783601473&#x2F;Img_4_3&#x2F;250&#x2F;France-Lannemezan-July-8-2026-5th-stage-of-the-Tour-de-France-between-Lannemezan-and-Pau-Departure-zone-in-Lannemezan-The-leader-of-Team-Decathlon-CMA-CGM-Paul-Seixas-before-the-start-of-the-race-He-uses-an-ice-vest-to-cool-down-France-Lannemezan-8-juillet-2026-5eme-etape-du-Tour-de-France-entre-Lannemezan-et-Pau-Zone-de-depart-a-Lannemezan-Le-leader-de-l-equipe-Decathlon-CMA-CGM-Paul-Seixas-quelques-instants-avant-le-debut-de-la-course-Il-utilise-un-gilet-glace-pour-se-rafraichir.jpg">
+                <div>
+                    <h1>Hitze ist bestialisch: Ex-Radprofi ätzt gegen &quot;Clowns&quot; bei der Tour de France</h1>
+                    <p>Bei der Tour de France ist es so heiß wie nie zuvor. Bei Temperaturen jenseits der 40 Grad und in der prallen Sonne wird es gesundheitsgefährdend. Dass der Weltverband UCI dennoch Maßnahmen untersagt, ist für einen Ex-Radprofi völlig unverständlich. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31056269&#x2F;1783416385&#x2F;Img_4_3&#x2F;250&#x2F;Belgium-s-Romelu-Lukaku-9-celebrates-after-scoring-his-side-s-fourth-goal-during-the-World-Cup-round-of-16-soccer-match-between-the-United-States-and-Belgium-in-Seattle-Monday-July-6-2026.jpg">
+                <div>
+                    <h1>Erst Balogun, jetzt Platz-Wut: Belgiens nächste WM-Beschwerde sorgt für Irritationen</h1>
+                    <p>Belgiens Fußballer sind nicht zufrieden. Der Platz, auf dem sie sich für das WM-Viertelfinale gegen Spanien vorbereiten sollen, entspricht nicht den &quot;Mindeststandards&quot;. Die FIFA erlaubt eine Ausnahme.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31066660&#x2F;1783598864&#x2F;Img_4_3&#x2F;250&#x2F;firo-31-05.jpg">
+                <div>
+                    <h1>Sogar mit Hoeneß&#39; Segen: Warum der DFB auf Mertesacker setzen sollte</h1>
+                    <p>Eloquent, erfahren, mit Stallgeruch: Per Mertesacker wird beim Deutschen Fußball-Bund hoch gehandelt. Er könnte den möglichen neuen Bundestrainer Jürgen Klopp unterstützen. Das hätte sogar den Segen des kritischen Uli Hoeneß. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31057931&#x2F;1783434370&#x2F;Img_4_3&#x2F;250&#x2F;July-4-2026-Houston-United-States-Ayyoub-Bouaddi-of-Morocco-seen-during-the-FIFA-World-Cup-WM-Weltmeisterschaft-Fussball-2026-football-match-between-Canada-and-Morocco-at-NRG-Stadium-Final-score-Canada-0-3-Morocco.jpg">
+                <div>
+                    <h1>Mit 18 schon Chef: Marokkos genialer Tausendsassa steht Frankreich im Weg</h1>
+                    <p>Wenn Marokko den Top-Favoriten Frankreich zum Tanz bittet, richten sich viele Augen auf ihn: Ayyoub Bouaddi ist einer der Durchstarter der WM - und kann die eigene Heimat rauswerfen. </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31061913&#x2F;1783591667&#x2F;Img_4_3&#x2F;250&#x2F;Fussball-Maenner-WM-Finalrunde-Sechzehntelfinale-Elfenbeinkueste-Norwegen-Dallas-Stadion-der-Norweger-Erling-Haaland-posiert-nach-dem-Sieg-mit-einem-Wikinger-Helm.jpg">
+                <div>
+                    <h1>Power Ranking zum Viertelfinale: Wer wird denn jetzt Weltmeister?</h1>
+                    <p>Die Crunchtime der Fußball-WM steht bevor. Die große Frage: Wer holt denn jetzt den Titel? Das wissen wir freilich nicht, unser Power Ranking gibt aber einen Überblick über die aktuelle Hackordnung.  </p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31065611&#x2F;1783583028&#x2F;Img_4_3&#x2F;250&#x2F;Cycling-Tour-de-France-Stage-4-Carcassonne-to-Foix-Carcassonne-France-July-7-2026-Team-Visma-Lease-a-Bike-s-Jonas-Vingegaard-ahead-of-the-start-of-stage-4-REUTERS-Stephanie-Lecocq.jpg">
+                <div>
+                    <h1>Hektische Jagd nach Sturz: Vingegaard erlebt Schreckmoment vor Pyrenäen-Showdown</h1>
+                    <p>Schreckmoment für Jonas Vingegaard auf der 5. Etappe der Tour de France: Der dänische Mitfavorit wird in der Schlussphase in einen Sturz verwickelt. Vor dem ersten Showdown bleibt er dennoch entspannt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31059069&#x2F;1783443407&#x2F;Img_4_3&#x2F;250&#x2F;Fans-der-Band-Kraftklub-schuetzen-sich-vor-Beginn-des-Konzerts-im-Rahmen-der-Sterben-in-Karl-Marx-Stadt-Open-Airs-2026-im-Rudolf-Harbig-Stadion-unter-Rettungsfolien-vor-der-Sonne.jpg">
+                <div>
+                    <h1>Hitzschlag vs. Vorerkrankungen: Sterben die meisten Menschen durch oder bei Hitze?</h1>
+                    <p>Jedes Jahr sterben Hunderte Menschen während Hitzeperioden im Sommer. Doch nicht immer sind die hohen Temperaturen die Haupt-Todesursache, sagt ein Arzt ntv.de. Vielen Betroffenen kann dabei unkompliziert geholfen werden - wenn man die Anzeichen erkennt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068617&#x2F;1783613689&#x2F;Img_4_3&#x2F;250&#x2F;Hinter-einem-abgesperrten-Park-an-einem-Hochhaus-in-Lichterfelde-steht-ein-Sichtschutz-waehrend-Gerichtsmediziner-dort-arbeiten-Es-wurde-ein-totes-Baby-entdeckt.jpg">
+                <div>
+                    <h1>Mutmaßliche Mutter des Kindes: Nach Fund eines toten Babys: 14-Jährige verdächtigt</h1>
+                    <p>Eine Jugendliche wird nach dem Fund einer Babyleiche in Berlin verdächtigt, am Tod des Säuglings beteiligt gewesen zu sein. Sie soll die Mutter des Kindes sein, das wohl höchstens einen Tag alt wurde. Eine Mordkommission ermittelt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31066685&#x2F;1783595274&#x2F;Img_4_3&#x2F;250&#x2F;Touristen-trotzdem-der-extremen-Hitze-auf-der-Koelner-Domplatte-mit-Sonnenhueten-und-Sonnenschirmen-Im-Juni-verzeichnete-der-Deutsche-Wetterdienst-DWD-den-heissesten-Tag-des-Jahres-seit-Beginn-der-Aufzeichnungen-Themenbild-Symbolbild-Koeln-29-06.jpg">
+                <div>
+                    <h1>Bei Rekord-Temperaturen: RKI: Tausende Menschen sterben durch Juni-Hitzewelle</h1>
+                    <p>Die extremen Temperaturen im Juni haben dramatische Folgen: Nach Schätzungen des Robert-Koch-Instituts gibt es innerhalb von nur einer Woche mehr als 4000 hitzebedingte Todesfälle. Besonders eine Bevölkerungsgruppe ist überproportional betroffen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="ressort">Aktuelle Nachricht</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;2324579&#x2F;1724245165&#x2F;Img_4_3&#x2F;250&#x2F;imago0060420107h.jpg">
+                <div>
+                    <h1>Flug in den Urlaub: Handgepäck: Was ist erlaubt, was nicht?</h1>
+                    <p>Vor der Sicherheitskontrolle bricht bei vielen Reisenden Hektik aus. Schnell die Wasserflasche leer trinken! Und Mist: Die Nagelschere ist im Rucksack statt im Koffer. Das muss aber kein Problem sein.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="news-item">
-        <h1>&quot;Darwin&#39;scher Ausleseprozess&quot;: Nur so kann der VW-Konzern überleben</h1>
-        <p>Wer sich jetzt nicht schnell anpasst, wird vom Markt verschwinden. Die Kosten zu senken, ist für die deutschen Autobauer unabdingbar - aber nur ein Brandherd von vielen.</p>
+
+    <div class="daughter-zone">
+        <div class="gallery-container">
+            <img class="funny-animal-image" src="https://loremflickr.com/400/250/cute,puppy/all">
+            <img class="funny-animal-image" src="https://loremflickr.com/400/250/cute,kitten/all">
+            <img class="funny-animal-image" src="https://loremflickr.com/400/250/cute,bunny/all">
+        </div>
     </div>
-    <div class="news-item">
-        <h1>Kreml gegen Friedensgespräche?: Insider rechnen mit Eskalation durch Putin</h1>
-        <p>US-Präsident Trump erzählt gerne, dass auch Moskau Frieden will. Drei dem Kreml nahestehende Personen sehen das ganz anders. Und russische Militärexperten diskutieren zunehmend über eine Ausweitung des Krieges.</p>
+
+    <div class="bottom-market-zone">
+        <div class="ticker-wrapper">
+            <iframe src="https://s.tradingview.com/embed-widget/tickers/?locale=de" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
     </div>
-    <div class="news-item">
-        <h1>Mann entzieht sich Militärdienst: Ukrainische Politiker fordern Konsequenzen nach Angriff auf Armee-Rekrutierer</h1>
-        <p>In ihrem Kampf gegen die russische Invasion verzeichnet die Ukraine jüngst einige Erfolge. Viele Ukrainer wehren sich aus Angst vor dem Dienst an der Front jedoch erbittert gegen Zwangsrekrutierungen auf offener Straße. Bei einem Vorfall in Lwiw gehen 200 Menschen gegen das Militär vor.</p>
-    </div>
-    <div class="news-item">
-        <h1>Entschuldigung wegen Gaza-Krieg: Designierter britischer Premier will Israel stärker unter Druck setzen</h1>
-        <p>Andy Burnham dürfte demnächst Großbritannien regieren. Dafür braucht der Labour-Politiker auch die Unterstützung seiner Partei, die sich im Hinblick auf den britischen Umgang mit Israel entzweit hat. Burnham bittet wegen der Haltung zu Gaza um Entschuldigung - wohl auch für Worte des aktuellen Premiers.</p>
-    </div>
-    <div class="news-item">
-        <h1>&quot;Sündenbock&quot; für Trump-Pfusch?: Ex-Olympionike vor Gericht: Farce um Reflecting Pool geht weiter</h1>
-        <p>David Hearn vertrat die USA mehrfach bei Olympischen Spielen. Nun drohen ihm bis zu zehn Jahre Haft, weil er in ein Wasserbecken in Washington gegriffen hat, dessen missglückte Renovierung den US-Präsidenten auf die Palme bringt. Der Anwalt des Angeklagten findet deutliche Worte. </p>
-    </div>
-    <div class="news-item">
-        <h1>Bundestrainer bis 2030: Details zu Klopps DFB-Vertrag durchgesickert - Ablöse für Red Bull offen</h1>
-        <p>Noch bevor die DFB-Bosse in New York mit Wunsch-Bundestrainer Jürgen Klopp zusammentreffen, sickern erste Details über dessen Vertrag durch. Offen ist, wie weit der DFB und Klopps Noch-Arbeitgeber Red Bull bereits sind.</p>
-    </div>
-    <div class="news-item">
-        <h1>&quot;Irrsinnige&quot; Szenen nach Landung: Erdogans Revolver-Geschenk bringt Nato-Partner in Verlegenheit</h1>
-        <p>Mit einem Revolver als Gastgeschenk sorgt Präsident Erdogan beim Nato-Gipfel für erstaunte Gesichter. Mehrere Staats- und Regierungschefs müssen sich um den legalen Transport der Waffe kümmern. Über die Symbolik wird spekuliert.</p>
-    </div>
-    <div class="news-item">
-        <h1>Berlin Tag &amp; Macht: MERZ. Demnächst im Kino! FSK: 67</h1>
-        <p>Großes Budget, prominente Darsteller, jahrelange Irrfahrt und ein Mann, der unbedingt ans Ziel will: Die Parallelen zwischen &quot;Die Odyssee&quot; und der Bundesregierung sind frappierend. Nur: Christopher Nolan hat ein Drehbuch, Friedrich Merz nur einen Koalitionsvertrag.</p>
-    </div>
-    <div class="news-item">
-        <h1>Soldatin und Palästinenser: Israelische Polizei vermutet Entführung und stößt auf Liebespaar</h1>
-        <p>Im Westjordanland lösen eine israelische Soldatin und ein Palästinenser einen Polizeieinsatz aus. Sicherheitskräfte vermuten zunächst eine Entführung, doch tatsächlich sind die beiden ein Paar. Für die Soldatin könnte die Beziehung Konsequenzen haben.</p>
-    </div>
-    <div class="news-item">
-        <h1>Mal kurz knipsen gehen: Thomas Müllers kurioser Blitz-Abschied von der WM</h1>
-        <p>Thomas Müller ist eigentlich voll im WM-Stress: Die deutsche Fußball-Legende ordnet als Experte das Geschehen ein und fiebert bei den Spielen voll mit. Doch den freien Tag nutzt er für einen Ausflug in eigener Sache. Und das erfolgreich.</p>
-    </div>
-    <div class="news-item">
-        <h1>&quot;Weitaus schwerwiegender&quot;: Weißes Haus attackiert Starmer nach Anstoß-Intervention</h1>
-        <p>Die Trump-Regierung verteidigt weiterhin rigoros ihr Vorgehen im Fall Balogun. Aus Sicht des Chefs der dortigen WM-Taskforce gibt es einen Fall, viel &quot;schwerwiegenderer&quot; politischer Einflussnahme auf die FIFA. </p>
-    </div>
-    <div class="news-item">
-        <h1>&quot;Blaue Zone&quot; auf Sardinien: Neuer Faktor für gesundes Altern identifiziert</h1>
-        <p>Die meisten Menschen wollen gesund lange leben. In den sogenannten &quot;Blauen Zonen&quot; gelingt das überdurchschnittlich vielen. Das könnte auch mit bestimmten Persönlichkeitsmerkmalen in Verbindung stehen, wie Forschende aktuell berichten. </p>
-    </div>
-    <div class="news-item">
-        <h1>Klage erfolgreich: Gericht stoppt vorerst Honorarkürzung bei Psychotherapeuten</h1>
-        <p>Die geplante Absenkung der Honorare für Psychotherapeuten sorgt für massive Kritik. Nun legt ein Gericht den Plan vorerst auf Eis. Die Richter äußern Zweifel an den Berechnungsmethoden.</p>
-    </div>
-    <div class="news-item">
-        <h1>Staaten bunkern: Experten erwarten hohe Öl-Nachfrage bis 2028 durch Regierungen</h1>
-        <p>Angesichts des zusammengebrochenen Schiffsverkehrs in der der Straße von Hormus geben Regierungen in aller Welt einen Teil ihrer strategischen Ölreserven frei. Deren Auffüllung wird einige Zeit dauern und so Nachfrage und Preis hochhalten. </p>
-    </div>
-    <div class="news-item">
-        <h1>Geldregen für Flick-Klub: FC Barcelona verhökert die Zukunft für XXL-Transferoffensive</h1>
-        <p>Der FC Barcelona ist chronisch knapp bei Kasse und hat doch große Transferziele. Um die zu finanzieren, greift der katalanische Verein nun offenbar auf einen lukrativen Trick zurück.  </p>
-    </div>
-    <div class="news-item">
-        <h1>Tour-Führender stürzt: Rad-Gigant Pogacar zerlegt Konkurrenz in Pyrenäen gnadenlos</h1>
-        <p>Tadej Pogacar zerstört früh auch die leisesten Hoffnungen der Konkurrenz, dass der Rad-Gigant bei der Tour de France schlagbar sein könnte. Schon auf der 6. Etappe zerlegt der Slowene die Konkurrenz.</p>
-    </div>
-    <div class="news-item">
-        <h1>US-Star Gauff dramatisch besiegt : Tschechinnen haben den Heiligen Rasen im Finale für sich</h1>
-        <p>Die All England Championships in Wimbledon werden zu den All Czech Championships. Zuerst wirft Karolina Muchova US-Star Coco Gauff raus, dann folgt ihr Linda Noskova durch einen Sieg gegen die Ukrainerin Marta Kostjuk ins Endspiel des Rasenklassikers. </p>
-    </div>
-    <div class="news-item">
-        <h1>Genug Erwachsene immunisiert: Stiko hebt allgemeine Impfempfehlung für Corona auf</h1>
-        <p>Seit der Entwicklung von Impfstoffen während der Corona-Pandemie empfahl die Ständige Impfkommission (Stiko) allen Erwachsenen eine Impfung. Doch damit ist nun Schluss. Nur für wenige Gruppen bleibt die Empfehlung bestehen.</p>
-    </div>
-    <div class="news-item">
-        <h1>Studie vergleicht Schlankmacher: Effektivste Abnehmmedikamente haben die meisten Nebenwirkungen</h1>
-        <p>Abnehmmedikamente werden in den vergangenen Jahren auch als Lifestyle-Produkte immer beliebter. Allein die Spritze Ozempic erfährt auf Social Media und in der Popkultur zuletzt einen kontroversen Hype. Doch wie effektiv sind die Medikamente wirklich - und wie gesund?</p>
-    </div>
-    <div class="news-item">
-        <h1>Amoktat an Gymnasium in Schongau: Ministerin lobt Schüler: Mädchen wäre wahrscheinlich verblutet</h1>
-        <p>An einem Gymnasium in Schongau geht ein 16-Jähriger mit einem Messer auf zwei Mädchen los und verletzt sie schwer. Bayerns Kultusministerin Stolz lobt das Verhalten der Schüler, die nach der Tat Hilfe leisteten. Ohne diesen Einsatz hätte eines der Opfer wohl nicht überlebt.</p>
-    </div>
-    <div class="news-item">
-        <h1>Urteil zu Unlimited-Tarifen: Darf Mobilfunkanbieter Vertrag jederzeit einseitig kündigen?</h1>
-        <p>Ist es nicht der Grundsatz von Verträgen, dass sie für beide Seiten gelten? Nein, befand ein Mobilfunkanbieter bei der Kündigung von Tarifen mit unbegrenztem Datenvolumen. Nun gibt es ein OLG-Urteil.</p>
-    </div>
-    <div class="news-item">
-        <h1>Bye bye, WM: Moderatorin Lea Wagner beginnt Babypause</h1>
-        <p>Noch am Dienstag begleitet Moderatorin Lea Wagner das WM-Spiel zwischen Argentinien und Ägypten mit praller Babykugel. Nun verabschiedet sie sich jedoch noch vor dem ersten Viertelfinale von dem Turnier - in den Mutterschutz.</p>
-    </div>
-    <div class="news-item">
-        <h1>Von Bohlen bis König Carl Gustaf: Die Trauer um Bonnie Tyler ist riesig</h1>
-        <p>Der Tod von Bonnie Tyler bewegt viele Menschen - in Deutschland ebenso wie im Ausland. Zahlreiche Kollegen, Wegbegleiteter und prominente Fans melden sich zu Wort, um der Sängerin die letzte Ehre zu erweisen. </p>
-    </div>
-    <div class="news-item">
-        <h1>Zusammen beim RTL-Fest: Micaela Schäfer präsentiert ihren neuen Freund</h1>
-        <p>Wenn RTL in Berlin zum Sommerfest ruft, kommen (fast) alle. Micaela Schäfer zum Beispiel. Und die &quot;Nacktschnecke&quot; hat sogar noch eine Überraschung im Gepäck: ihren neuen Freund.</p>
-    </div>
-    <div class="news-item">
-        <h1>Bühnenrollen und Kinderfernsehen: Schauspieler Achim Wolff ist tot</h1>
-        <p>Die ZDF-Sitcom &quot;Salto Postale&quot; und die Kinderserie &quot;Beutolomäus&quot; machen Achim Wolff dem breiten Fernsehpublikum bekannt. Nun ist der Schauspieler mit 87 Jahren nach schwerer Krankheit gestorben.</p>
-    </div>
-    <div class="news-item">
-        <h1>Reibeisenstimme ist verstummt: Trauer um Sängerin Bonnie Tyler </h1>
-        <p>Mit Hits wie &quot;Total Eclipse of the Heart&quot; oder &quot;Holding out for a Hero&quot; prägt Bonnie Tyler mit ihrer Reibeisenstimme die Rockmusik der 80er-Jahre. Nach einer Not-OP im Mai erholt sich die Sängerin nicht mehr. Nun gibt ihr Management ihren Tod bekannt. </p>
-    </div>
-    <div class="news-item">
-        <h1>Er erkennt seine Hits im Koma: Familie schöpft Hoffnung bei Ralph Siegel</h1>
-        <p>Ralph Siegel kämpft weiter auf der Intensivstation. Während der Komponist im künstlichen Koma liegt, berichten seine Angehörigen von ersten Reaktionen - und hoffen nun auf den nächsten entscheidenden Schritt.</p>
-    </div>
-    <div class="news-item">
-        <h1>Chinakracher gegen Herausforderer: Segway Max G3 D vs. Navee UT5 Max - E-Kickscooter im Vergleichstest</h1>
-        <p>Größer, stärker, ausdauernder: Der Navee UT5 Max tritt mit eindrucksvollen Daten gegen den erfolgreichen Segway Max G3 D an. Doch im Alltag zählt mehr als Größe und Leistung. </p>
-    </div>
-    <div class="news-item">
-        <h1>Neuer Kandidat für Wahl?: Berliner CDU berät bei Krisentreffen über Wegner</h1>
-        <p>Die Berliner CDU fällt in Umfragen wenige Monate vor der Abgeordnetenhauswahl weiter zurück. Spitzenkandidat und Regierungschef Wegner muss immer wieder Aussagen zu seinem Agieren beim Blackout korrigieren. Nun könnte die Partei die Reißleine ziehen.</p>
-    </div>
-    <div class="news-item">
-        <h1>Missbrauchsmaterial im Internet: EU-Parlament stimmt nun doch für umstrittene Chatkontrolle</h1>
-        <p>Eigentlich stimmt das EU-Parlament gegen das Scannen privater Chats auf kinderpornografische Inhalte. Doch die Parlamentspräsidentin bringt das Thema nach Kritik zurück auf die Agenda - ein Vorgehen, ebenso umstritten wie das Chat-Scanning. Nun ist eine Entscheidung gefallen.</p>
-    </div>
-    <div class="news-item">
-        <h1>Geplanter Bürokratieabbau: Bundestag macht Weg für Kindergeld ohne Antrag frei</h1>
-        <p>Die Zeit nach der Geburt ist für Familien herausfordernd. Die Koalition will Eltern nun zumindest beim Kindergeld entlasten. Dieses soll künftig ohne Antrag automatisch ausgezahlt werden - wenn Bedingungen erfüllt sind.</p>
-    </div>
-    <div class="news-item">
-        <h1>&quot;Sicherheitsgurt&quot; für Versorgung: Koalition ebnet Weg für neue Gaskraftwerke</h1>
-        <p>Scheint keine Sonne und bläst kein Wind, sollen Gaskraftwerke die deutsche Stromversorgung sichern. Die Koalition verbesserte nun die Anreize für Unternehmen, solche Werke zu bauen. Auf Stromkunden kommen deswegen neue Kosten zu.</p>
-    </div>
-    <div class="news-item">
-        <h1>&quot;Notwendiger Schritt&quot;: Salzgitter kauft Stahlfirma HKM und streicht 2000 Jobs</h1>
-        <p>Die Bereinigung in der deutschen Stahlindustrie geht weiter. Thyssenkrupp trennt sich von seinem Anteil an den Hüttenwerken Krupp Mannesmann. Auch der französische Eigner zieht sich zurück. Salzgitter greift als neuer Alleinbesitzer durch und setzt auf das Thema grüner Stahl.</p>
-    </div>
-    <div class="news-item">
-        <h1>&quot;Historischer Rückgang&quot;: Zahl der Piratenangriffe fällt auf niedrigsten Stand seit 1992</h1>
-        <p>Schiffe werden geentert und die Besatzung als Geiseln genommen: 38 Piratenangriffe zählt das Internationale Schifffahrtsbüro im ersten Halbjahr - so wenige wie seit mehr als 30 Jahren nicht mehr. Doch Grund zur Entwarnung gibt es wohl nicht.</p>
-    </div>
-    <div class="news-item">
-        <h1>Kadiru kann&#39;s nicht glauben: Deutschland winkt ein Weltmeister aus dem Nichts</h1>
-        <p>Peter Kadiru erhält aus dem Nichts die Chance seines Lebens - der Hamburger boxt am Wochenende um den WM-Titel im Schwergewicht. Das liegt an mehreren (un)glücklichen Umständen.</p>
-    </div>
-    <div class="news-item">
-        <h1>Zurück zu Hansi Flick: Wechselt BVB-Sünder Adeyemi in seine persönliche Wohlfühloase?</h1>
-        <p>Als Bundestrainer ist Hansi Flick einer der Förderer von Karim Adeymi. Nun könnten die beiden wieder zusammenarbeiten - wenn denn der BVB-Profi zum FC Barcelona wechselt. Das hätte auch für die Dortmunder Vorteile. </p>
-    </div>
-    <div class="news-item">
-        <h1>Khediras Rückkehr: Deutscher WM-Held wird Mourinhos Co-Trainer bei Real Madrid</h1>
-        <p>Sami Khedira wird künftig bei Real Madrid an der Seite von Star-Coach José Mourinho arbeiten. Der deutsche Rio-Weltmeister feiert damit nach elf Jahren seine Rückkehr zum Weltklub.</p>
-    </div>
-    <div class="news-item">
-        <h1>Englands Schattenmann: Thomas Tuchel hat endlich den Spieler, den er immer haben wollte</h1>
-        <p>150-Millionen-Mann Elliot Anderson sorgt im Schatten von Superstürmer Harry Kane für Ordnung in Englands Mittelfeld. Thomas Tuchel schwört auf den Abräumer. Wird er der Trumpf im Kampf gegen das ewige WM-Leid?</p>
-    </div>
-    <div class="news-item">
-        <h1>Hitze ist bestialisch: Ex-Radprofi ätzt gegen &quot;Clowns&quot; bei der Tour de France</h1>
-        <p>Bei der Tour de France ist es so heiß wie nie zuvor. Bei Temperaturen jenseits der 40 Grad und in der prallen Sonne wird es gesundheitsgefährdend. Dass der Weltverband UCI dennoch Maßnahmen untersagt, ist für einen Ex-Radprofi völlig unverständlich. </p>
-    </div>
-    <div class="news-item">
-        <h1>Erst Balogun, jetzt Platz-Wut: Belgiens nächste WM-Beschwerde sorgt für Irritationen</h1>
-        <p>Belgiens Fußballer sind nicht zufrieden. Der Platz, auf dem sie sich für das WM-Viertelfinale gegen Spanien vorbereiten sollen, entspricht nicht den &quot;Mindeststandards&quot;. Die FIFA erlaubt eine Ausnahme.</p>
-    </div>
-    <div class="news-item">
-        <h1>Sogar mit Hoeneß&#39; Segen: Warum der DFB auf Mertesacker setzen sollte</h1>
-        <p>Eloquent, erfahren, mit Stallgeruch: Per Mertesacker wird beim Deutschen Fußball-Bund hoch gehandelt. Er könnte den möglichen neuen Bundestrainer Jürgen Klopp unterstützen. Das hätte sogar den Segen des kritischen Uli Hoeneß. </p>
-    </div>
-    <div class="news-item">
-        <h1>Mit 18 schon Chef: Marokkos genialer Tausendsassa steht Frankreich im Weg</h1>
-        <p>Wenn Marokko den Top-Favoriten Frankreich zum Tanz bittet, richten sich viele Augen auf ihn: Ayyoub Bouaddi ist einer der Durchstarter der WM - und kann die eigene Heimat rauswerfen. </p>
-    </div>
-    <div class="news-item">
-        <h1>Power Ranking zum Viertelfinale: Wer wird denn jetzt Weltmeister?</h1>
-        <p>Die Crunchtime der Fußball-WM steht bevor. Die große Frage: Wer holt denn jetzt den Titel? Das wissen wir freilich nicht, unser Power Ranking gibt aber einen Überblick über die aktuelle Hackordnung.  </p>
-    </div>
-    <div class="news-item">
-        <h1>Hektische Jagd nach Sturz: Vingegaard erlebt Schreckmoment vor Pyrenäen-Showdown</h1>
-        <p>Schreckmoment für Jonas Vingegaard auf der 5. Etappe der Tour de France: Der dänische Mitfavorit wird in der Schlussphase in einen Sturz verwickelt. Vor dem ersten Showdown bleibt er dennoch entspannt.</p>
-    </div>
-    <div class="news-item">
-        <h1>Hitzschlag vs. Vorerkrankungen: Sterben die meisten Menschen durch oder bei Hitze?</h1>
-        <p>Jedes Jahr sterben Hunderte Menschen während Hitzeperioden im Sommer. Doch nicht immer sind die hohen Temperaturen die Haupt-Todesursache, sagt ein Arzt ntv.de. Vielen Betroffenen kann dabei unkompliziert geholfen werden - wenn man die Anzeichen erkennt.</p>
-    </div>
-    <div class="news-item">
-        <h1>Mutmaßliche Mutter des Kindes: Nach Fund eines toten Babys: 14-Jährige verdächtigt</h1>
-        <p>Eine Jugendliche wird nach dem Fund einer Babyleiche in Berlin verdächtigt, am Tod des Säuglings beteiligt gewesen zu sein. Sie soll die Mutter des Kindes sein, das wohl höchstens einen Tag alt wurde. Eine Mordkommission ermittelt.</p>
-    </div>
-    <div class="news-item">
-        <h1>Bei Rekord-Temperaturen: RKI: Tausende Menschen sterben durch Juni-Hitzewelle</h1>
-        <p>Die extremen Temperaturen im Juni haben dramatische Folgen: Nach Schätzungen des Robert-Koch-Instituts gibt es innerhalb von nur einer Woche mehr als 4000 hitzebedingte Todesfälle. Besonders eine Bevölkerungsgruppe ist überproportional betroffen.</p>
-    </div>
-    <div class="news-item">
-        <h1>Flug in den Urlaub: Handgepäck: Was ist erlaubt, was nicht?</h1>
-        <p>Vor der Sicherheitskontrolle bricht bei vielen Reisenden Hektik aus. Schnell die Wasserflasche leer trinken! Und Mist: Die Nagelschere ist im Rucksack statt im Koffer. Das muss aber kein Problem sein.</p>
-    </div>
-</div>
+
+</body>
+</html>
