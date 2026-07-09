@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { width: 1060px; height: 1520px; background-color: #fcfaf5; font-family: 'Times New Roman', Times, serif; padding: 25px; margin: 0; color: #111111; display: flex; flex-direction: column; justify-content: space-between; }
+        .newspaper-header { text-align: center; border-bottom: 5px solid #111111; padding-bottom: 10px; margin-bottom: 25px; }
+        .newspaper-title { font-size: 78px; font-weight: bold; margin: 0; line-height: 1; }
+        .newspaper-date { font-size: 20px; font-style: italic; font-weight: bold; margin-top: 8px; color: #444444; text-transform: uppercase; }
+        .main-content { display: flex; flex-direction: column; justify-content: space-between; flex: 1; overflow: hidden; margin-bottom: 20px; }
+        .news-item { border-bottom: 1px solid #cccccc; padding-bottom: 20px; }
+        .news-header-block { display: flex; gap: 25px; align-items: flex-start; }
+        .news-image { width: 360px; height: 220px; border: 1px solid #111111; object-fit: cover; flex-shrink: 0; }
+        .ressort { color: #8b0000; font-size: 12px; text-transform: uppercase; font-weight: bold; margin-bottom: 5px; }
+        h1 { font-size: 26px; line-height: 1.2; margin: 0 0 8px 0; }
+        p { font-size: 15.5px; line-height: 1.45; color: #222222; margin: 0; text-align: justify; }
+        .daughter-zone { border-top: 4px double #8b0000; padding-top: 20px; margin-bottom: 25px; }
+        .gallery-container { display: flex; justify-content: space-between; gap: 15px; }
+        .funny-animal-image { width: 335px; height: 215px; border: 1px solid #111111; object-fit: cover; border-radius: 4px; }
+        .bottom-market-zone { border-top: 4px solid #111111; padding-top: 12px; margin-top: auto; }
+        .ticker-wrapper { width: 100%; height: 72px; border: 1px solid #111111; background: #ffffff; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+    <div class="newspaper-header">
+        <div class="newspaper-title">Merseburger Post</div>
+        <div class="newspaper-date" id="live-date"></div>
+    </div>
+
+    <script>
+        document.getElementById('live-date').innerText = new Date().toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+
+    <div class="main-content">
+        <div class="news-item">
+            <div class="ressort">Top-Thema</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068711&#x2F;1783614445&#x2F;Img_4_3&#x2F;250&#x2F;A-television-set-in-a-hotel-room-shows-Hungarian-Prime-Minister-Viktor-Orban-during-a-televised-appearance-in-Budapest-Hungary-on-April-10-2026.jpg">
+                <div>
+                    <h1>Entschuldigung war nur Anfang: Orbans Lügenpresse bricht in sich zusammen</h1>
+                    <p>In ungarischen Fernsehsendern rollen die Köpfe, die Günstlinge von Ex-Premier Orban müssen gehen. Besiegelt wird der Neuanfang mit einer öffentlichen Entschuldigung für all die Lügen während Orbans Amtszeit. Doch der Wandel reicht weiter – bis hinein in die Finanzströme von Fidesz.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="ressort">Politik & Wirtschaft</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068248&#x2F;1783610456&#x2F;Img_4_3&#x2F;250&#x2F;FILE-A-Tomahawk-cruise-missile-is-fired-off-the-battleship-USS-Wisconsin-towards-a-target-in-Iraq-in-the-Persian-Gulf-on-Jan-17-1991-Japan-s-defense-spending-will-jump-20-to-a-record-6-8-trillion-yen-55-billion-next-year-as-the-country-prepares-to-deploy-U-S-made-Tomahawks-and-other-long-range-cruise-missiles-that-can-hit-targets-in-China-or-North-Korea-under-a-more-offensive-security-strategy.jpg">
+                <div>
+                    <h1>Marschflugkörper schließen Lücke: Der Tomahawk-Kauf ist ein perfekter Trump-Deal - und ein Signal an Moskau</h1>
+                    <p>Die Europäer sollen gefälligst für ihre eigene Sicherheit zahlen, lautet das Mantra von US-Präsident Trump. Was das konkret bedeutet, zeigt sich beim deutschen Tomahawk-Kauf. Die Marschflugkörper schließen eine Lücke - bis die Europäer endlich aus dem Knick kommen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="ressort">Ausland & Welt</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31068149&#x2F;1783609398&#x2F;Img_4_3&#x2F;250&#x2F;09-07-2026-Niedersachsen-Zwickau-Beschaeftigte-von-Volkswagen-beteiligen-sich-an-einer-Informations-und-Protestaktion-der-IG-Metall-vor-dem-VW-Werk-in-Zwickau-Am-Tag-der-Aufsichtsratssitzung-der-Volkswagen-AG-in-Wolfsburg-organisiert-die-IG-Metall-bundesweit-Informations-und-Protestaktionen-an-zahlreichen-Standorten-des-Konzerns.jpg">
+                <div>
+                    <h1>&quot;Darwin&#39;scher Ausleseprozess&quot;: Nur so kann der VW-Konzern überleben</h1>
+                    <p>Wer sich jetzt nicht schnell anpasst, wird vom Markt verschwinden. Die Kosten zu senken, ist für die deutschen Autobauer unabdingbar - aber nur ein Brandherd von vielen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-item" style="border-bottom: none;">
+            <div class="ressort">Wissen & Panorama</div>
+            <div class="news-header-block">
+                <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067974&#x2F;1783607439&#x2F;Img_4_3&#x2F;250&#x2F;RUSSIA-JULY-3-EDITORIAL-USE-ONLY-MANDATORY-CREDIT-KREMLIN-PRESS-SERVICE-HANDOUT-NO-MARKETING-NO-ADVERTISING-CAMPAIGNS-DISTRIBUTED-AS-A-SERVICE-TO-CLIENTS-A-screen-grab-taken-from-a-video-shows-Russian-President-Vladimir-Putin-during-a-military-meeting-with-Chief-of-the-General-Staff-of-the-Russian-Armed-Forces-Valery-Gerasimov-and-senior-troop-commanders-at-a-command-center-of-the-Joint-Group-of-Forces-in-Russia-on-July-03-2026.jpg">
+                <div>
+                    <h1>Kreml gegen Friedensgespräche?: Insider rechnen mit Eskalation durch Putin</h1>
+                    <p>US-Präsident Trump erzählt gerne, dass auch Moskau Frieden will. Drei dem Kreml nahestehende Personen sehen das ganz anders. Und russische Militärexperten diskutieren zunehmend über eine Ausweitung des Krieges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="daughter-zone">
+        <div class="gallery-container">
+            <img class="funny-animal-image" src="https://loremflickr.com/400/250/cute,puppy/all">
+            <img class="funny-animal-image" src="https://loremflickr.com/400/250/cute,kitten/all">
+            <img class="funny-animal-image" src="https://loremflickr.com/400/250/cute,bunny/all">
+        </div>
+    </div>
+
+    <div class="bottom-market-zone">
+        <div class="ticker-wrapper">
+            <iframe src="https://s.tradingview.com/embed-widget/tickers/?locale=de" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
