@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { width: 1200px; padding: 50px; margin: 0; font-family: 'Times New Roman', serif; color: #000000; background-color: #ffffff; }
+        .newspaper-header { text-align: center; border-bottom: 8px solid #000000; padding-bottom: 20px; margin-bottom: 40px; }
+        .newspaper-title { font-size: 120px; font-weight: bold; text-transform: uppercase; margin: 0; }
+        .newspaper-date { font-size: 35px; font-style: italic; margin-top: 15px; }
+        
+        /* 5 Nachrichten-Layout: Volle Breite */
+        .news-item { display: flex; gap: 40px; border-bottom: 3px solid #000; padding: 30px 0; align-items: flex-start; }
+        .news-image { width: 450px; height: 280px; object-fit: cover; border: 2px solid #000; flex-shrink: 0; }
+        .news-text { flex-grow: 1; }
+        .ressort { color: #8b0000; font-size: 20px; text-transform: uppercase; font-weight: bold; margin-bottom: 10px; }
+        h1 { font-size: 45px; line-height: 1.1; margin: 0 0 15px 0; }
+        p { font-size: 30px; line-height: 1.4; margin: 0; text-align: justify; }
+    </style>
+</head>
+<body>
+
+    <div class="newspaper-header">
+        <div class="newspaper-title">Merseburger Post</div>
+        <div class="newspaper-date">
+            <script>document.write(new Date().toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }));</script>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31072782&#x2F;1783697272&#x2F;Img_4_3&#x2F;250&#x2F;VW-Mitarbeiter-montieren-ein-Reisemobil-Volkswagen-California-in-der-California-Fertigung-in-Hannover-Volkswagen-Nutzfahrzeuge-feiert-Jubilaeum-200-000-Reisemobile-California-wurden-in-Hannover-produziert-Taeglich-verlassen-bis-zu-140-Camper-die-Fertigungshallen.jpg">
+        <div class="news-text">
+            <div class="ressort">Top-Thema</div>
+            <h1>Kommt noch Rettung aus China?: Diesen Volkswagen-Standorten droht das Aus</h1>
+            <p>Berichten zufolge will VW-Chef Oliver Blume die Produktion in fünf Werken des Autokonzerns einstellen. Einen Beschluss dazu gibt es noch nicht. Klar ist aber, selbst große Traditionsstandorte müssen ehrgeizige Kostenziele erreichen, sonst droht das Aus. Ein Überblick.</p>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31073037&#x2F;1783703308&#x2F;Img_4_3&#x2F;250&#x2F;ARCHIV-06-07-2026-Berlin-Berlins-Regierender-Buergermeister-Kai-Wegner-CDU-spricht-waehrend-der-Pressekonferenz-der-Expertenkommission-zum-grossen-Stromausfall-Anfang-des-Jahres-2026.jpg">
+        <div class="news-text">
+            <div class="ressort">Politik & Wirtschaft</div>
+            <h1>Berliner CDU in Trümmern: Kai Wegner zieht die Notbremse nach dem Crash</h1>
+            <p>Seit Januar, seit Teile Berlins im Dunkeln saßen, gärt die Debatte um Kai Wegner. Was hat der Regierende Bürgermeister am ersten Tag des Stromausfalls gemacht, außer Tennis zu spielen? Monatelang hatte er Zeit, alle Widersprüche aufzuklären. Bis es zu spät war und er seine Partei in Trümmer zurücklässt.</p>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31073465&#x2F;1783706145&#x2F;Img_4_3&#x2F;250&#x2F;Berlin-Mayor-Kai-Wegner-resigned-as-top-candidate-for-the-upcoming-state-election-bowing-to-pressure-to-step-down-over-several-crisis-management-missteps-cascading-from-his-decision-to-play-tennis-while-a-power-outage-plunged-large-swathes-of-the-German-capital-into-darkness-in-January-in-Berlin-Germany-July-10-2026.jpg">
+        <div class="news-text">
+            <div class="ressort">Ausland & Welt</div>
+            <h1>&quot;Fehler, Pech und Pannen&quot;: Der brutale Absturz des Kai Wegner</h1>
+            <p>Mehr als zwei Jahrzehnte brauchte die CDU, um in Berlin die SPD als stärkste Kraft abzulösen. Nicht mal drei Jahre benötigte sie, um die Wähler wieder zu verprellen und auf altes Maß abzurutschen. Verantwortlich dafür zeichnet vor allem Regierungschef Wegner. Intern werden ihm &quot;Fehler, Pech und Pannen&quot; bescheinigt.</p>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31073278&#x2F;1783703445&#x2F;Img_4_3&#x2F;250&#x2F;Friedrich-Merz-und-Nina-Warken-in-der-90-Sitzung-des-21-Deutschen-Bundestages-im-Reichstagsgebaeude-Berlin-10-07.jpg">
+        <div class="news-text">
+            <div class="ressort">Wissen & Panorama</div>
+            <h1>Erste Reform ist beschlossen: Koalition feiert GKV-Erfolg - aber der könnte voll nach hinten losgehen</h1>
+            <p>Es ist geschafft, die schwarz-rote Koalition hat ihr erstes großes Reformvorhaben unter Dach und Fach gebracht. Das ist zunächst einmal ein Erfolg. Doch ob es die Wählerschaft der Regierung danken wird, ist eine ganz andere Frage.</p>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img class="news-image" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31073333&#x2F;1783704115&#x2F;Img_4_3&#x2F;250&#x2F;Praesident-Donald-Trump-spricht-nach-der-Landung-auf-dem-Stuetzpunkt-der-US-Luftwaffe-bei-der-RAF-Mildenhall-an-Bord-der-Air-Force-One-mit-Reportern.jpg">
+        <div class="news-text">
+            <div class="ressort">Aktuelles</div>
+            <h1>Obwohl Waffenruhe &quot;VORBEI&quot; ist: Trump stimmt neuen &quot;Gesprächen&quot; mit Teheran zu</h1>
+            <p>Vor wenigen Tagen erklärt US-Präsident Trump die Waffenruhe im Iran-Krieg für beendet, beschimpft Unterhändler aus Teheran und startet neue Angriffe. Die &quot;Gespräche&quot; sollen aber fortgesetzt werden, schreibt Trump nun. Warum er das Wort in Anführungszeichen setzt, bleibt aber unklar. </p>
+        </div>
+    </div>
+
+</body>
+</html>
