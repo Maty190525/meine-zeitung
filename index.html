@@ -2,16 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1200, initial-scale=1.0">
     <style>
         body {
-            width: 100vw; /* Nutzt immer die volle Displaybreite */
+            width: 100vw;
             height: 1600px;
             margin: 0;
             padding: 0;
             background: #f4f2ee;
             font-family: 'Times New Roman', Times, serif;
-            color: #1a1a1a;
+            color: #000; /* Reines Schwarz für besseren Kontrast auf E-Ink */
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -25,14 +24,14 @@
         .newspaper-header h1 {
             font-size: 110px;
             margin: 0;
+            font-weight: 900; /* Extra Fett */
             text-transform: uppercase;
-            letter-spacing: -2px;
         }
         .meta-info {
             text-align: center;
-            font-size: 30px;
-            margin-top: 5px;
-            font-style: italic;
+            font-size: 34px;
+            font-weight: bold; /* Dicker */
+            margin-top: 10px;
         }
         .news-container {
             flex-grow: 1;
@@ -40,48 +39,37 @@
             column-count: 2;
             column-gap: 40px;
             box-sizing: border-box;
-            width: 100%;
         }
         .news-item {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             break-inside: avoid;
         }
-        .img {
-            width: 100%;
-            height: auto;
-            border: 1px solid #777;
-            margin-bottom: 10px;
-        }
         h2 { 
-            font-size: 40px; 
-            margin: 0 0 8px 0; 
+            font-size: 44px; 
+            font-weight: 800; /* Viel dicker */
+            margin: 0 0 10px 0; 
             line-height: 1.1; 
         }
         p { 
-            font-size: 28px; 
-            line-height: 1.35; 
+            font-size: 30px; 
+            font-weight: 500; /* Etwas schwerer */
+            line-height: 1.4; 
             margin: 0; 
         }
+        .img { width: 100%; border: 2px solid #000; margin-bottom: 10px; }
     </style>
 </head>
 <body>
-
     <div class="newspaper-header">
         <h1>Merseburger Post</h1>
-        <div class="meta-info" id="datetime">Lade Zeit...</div>
+        <div class="meta-info" id="datetime"></div>
     </div>
 
     <script>
-        function updateTime() {
-            const now = new Date();
-            const dateStr = now.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-            const timeStr = now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
-            document.getElementById('datetime').innerHTML = dateStr + " | " + timeStr;
-        }
-        // Zeit sofort setzen
-        updateTime();
-        // Alle 30 Sekunden aktualisieren
-        setInterval(updateTime, 30000);
+        const now = new Date();
+        document.getElementById('datetime').innerHTML = 
+            now.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) + 
+            " | " + now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
     </script>
 
     <div class="news-container">
@@ -111,6 +99,5 @@
             <p>In Sachsen-Anhalt könnte die AfD nach der Wahl im September in Regierungsverantwortung kommen. &quot;Wir geben den Ton an&quot;, gibt sich ihr 35-jähriger Spitzenkandidat Siegmund siegesgewiss und stellt ein Programm für die ersten Monate einer möglichen Regierung vor.</p>
         </div>
     </div>
-
 </body>
 </html>
