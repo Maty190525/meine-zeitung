@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <style>
+        body {
+            width: 1200px;
+            height: 1600px;
+            margin: 0;
+            padding: 0;
+            background: #f4f2ee; /* Leichtes Zeitungs-Papier-Weiß */
+            font-family: 'Times New Roman', Times, serif;
+            color: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+        }
+        .newspaper-header {
+            text-align: center;
+            padding: 40px 0 20px 0;
+            border-bottom: 3px solid #000;
+        }
+        .newspaper-header h1 {
+            font-size: 120px;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+        .meta-info {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .news-container {
+            padding: 40px;
+            column-count: 2; /* Zeitungs-Spalten-Look */
+            column-gap: 60px;
+        }
+        .news-item {
+            margin-bottom: 50px;
+            break-inside: avoid;
+        }
+        .img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #999;
+            margin-bottom: 15px;
+        }
+        h2 { font-size: 42px; margin: 0 0 10px 0; line-height: 1.1; }
+        p { font-size: 28px; line-height: 1.4; margin: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="newspaper-header">
+        <h1>Merseburger Post</h1>
+        <div class="meta-info" id="datetime"></div>
+    </div>
+
+    <script>
+        const now = new Date();
+        document.getElementById('datetime').innerHTML = 
+            now.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) + 
+            " | " + now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+    </script>
+
+    <div class="news-container">
+        <div class="news-item">
+            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31072900&#x2F;1783698818&#x2F;Img_4_3&#x2F;250&#x2F;Bildmontage-Schueler-in-einer-Schule-in-Bangui-Zentralafrikanische-Republik-2014.jpg" onerror="this.style.display='none'">
+            <h2>UN-Daten zur Weltbevölkerung: Wie sich die Welt bis 2080 verändert</h2>
+            <p>Nie zuvor lebten so viele Menschen gleichzeitig auf der Erde - und es werden täglich mehr. Die Weltbevölkerung schwillt UN-Daten zufolge weiter an, entwickelt sich regional jedoch höchst unterschiedlich. Deutschland schrumpft, andere Länder legen stark zu. Die heftigste Prognose betrifft China.</p>
+        </div>
+        <div class="news-item">
+            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067241&#x2F;1783599684&#x2F;Img_4_3&#x2F;250&#x2F;Blumenfelder-in-der-Lommatzscher-Pflege-Blumenfelder-in-der-Lommatzscher-Pflege-Die-wegen-ihrer-fruchtbaren-Boeden-als-Kornkammer-Sachsens-bekannte-Region-besitzt-dank-einer-gemeinsamen-Historie-bezeugt-durch-kulturlandschaftliche-Einheit-und-Baukultur-eine-starke-regionale-Identitaet.jpg" onerror="this.style.display='none'">
+            <h2>Protest-Irrsinn in Lommatzsch: &quot;Wir wollten Windkraft unbedingt ablehnen und bekommen jetzt das Gegenteil&quot;</h2>
+            <p>Lommatzsch hat zwei Windparks und einen Solarpark. Für die hoch verschuldete Gemeinde ein Segen. Der Haushalt wird mit den Einnahmen aus den Erneuerbaren saniert. Doch Windkraft polarisiert. Aus Protest lehnt der Gemeinderat das Repowering alter Anlagen ab. Laut der Bürgermeisterin in jeder Hinsicht ein Eigentor.</p>
+        </div>
+        <div class="news-item">
+            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31075202&#x2F;1783777625&#x2F;Img_4_3&#x2F;250&#x2F;DEU-Deutschland-Germany-Berlin-10-07-2026-Kai-Wegner-Landesvorsitzender-der-Berliner-CDU-und-Regierender-Buergermeister-von-Berlin-waehrend-der-Pressekonferenz-der-CDU-Berlin-zu-seinem-Ruecktritt-als-Spitzenkandidat-der-CDU-fuer-die-Abgeordnetenhauswahl-am-20.jpg" onerror="this.style.display='none'">
+            <h2>Berliner Regierungschef auf Abwegen: Warum kann ein Politiker nicht einfach die Wahrheit sagen?</h2>
+            <p>Statt einen Fehler einzugestehen, hat Kai Wegner gelogen. So gärte es über Monate hinweg, bis er aufgab und der Berliner CDU das größte Debakel ihrer jüngeren Geschichte bescherte. Warum hat er es mit Vertuschung versucht? Ein Tut-mir-leid wäre besser gewesen. Doch das kriegen Berufspolitiker kaum mehr hin.</p>
+        </div>
+        <div class="news-item">
+            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31075469&#x2F;1783785696&#x2F;Img_4_3&#x2F;250&#x2F;Peter-Tschentscher-SPD-Erster-Buergermeister-von-Hamburg-steht-auf-dem-Balkon-des-Rathauses.jpg" onerror="this.style.display='none'">
+            <h2>GKV-Reform eine &quot;Fehlleistung&quot; : SPD-Bürgermeister Tschentscher greift Bundesregierung scharf an</h2>
+            <p>Die Kritik kommt aus den eigenen Reihen: Hamburgs Bürgermeister Peter Tschentscher wirft der schwarz-roten Koalition eine verfehlte Steuer- und Finanzpolitik vor. Die Bundesregierung mache sich mit &quot;Steuergeschenken aus der Gießkanne&quot; handlungsunfähig.</p>
+        </div>
+        <div class="news-item">
+            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31075119&#x2F;1783775335&#x2F;Img_4_3&#x2F;250&#x2F;Martin-Reichardt-l-AfD-Landesvorsitzender-AfD-in-Sachsen-Anhalt-und-Ulrich-Siegmund-r-AfD-Spitzenkandidat-bei-der-Landtagswahl-begruessen-sich-In-Magdeburg-findet-ein-Landesparteitag-der-AfD-Sachsen-Anhalt.jpg" onerror="this.style.display='none'">
+            <h2>&quot;Das Ziel heißt Staatskanzlei&quot;: AfD plant 100-Tage-Rundumschlag in Sachsen-Anhalt</h2>
+            <p>In Sachsen-Anhalt könnte die AfD nach der Wahl im September in Regierungsverantwortung kommen. &quot;Wir geben den Ton an&quot;, gibt sich ihr 35-jähriger Spitzenkandidat Siegmund siegesgewiss und stellt ein Programm für die ersten Monate einer möglichen Regierung vor.</p>
+        </div>
+    </div>
+
+</body>
+</html>
