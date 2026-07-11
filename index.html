@@ -7,57 +7,61 @@
         .newspaper-header { text-align: center; padding: 20px 0; border-bottom: 4px solid #000; }
         h1 { font-size: 100px; margin: 0; text-transform: uppercase; }
         .meta-info { font-size: 30px; margin-top: 5px; }
-        .news-container { padding: 40px; column-count: 2; column-gap: 40px; }
+        
+        /* Layout-Container */
+        .page-content { padding: 40px; }
+        .news-container { column-count: 2; column-gap: 40px; }
         .news-item { margin-bottom: 30px; break-inside: avoid; }
         h2 { font-size: 36px; margin: 0 0 5px 0; }
         p { font-size: 26px; margin: 0; }
         .img { width: 100%; border: 2px solid #000; margin-bottom: 10px; }
         
-        /* Erzwingt volle Breite */
-        .finance-box { margin-top: 30px; width: 100%; display: block; }
+        /* Widget-Container (jetzt außerhalb der Spalten) */
+        .finance-box { margin-top: 40px; width: 100%; border-top: 4px solid #000; padding-top: 20px; }
     </style>
 </head>
 <body>
     <div class="newspaper-header">
         <h1>Merseburger Post</h1>
-        <div class="meta-info">Stand: Samstag, 11. Juli 2026 | 21:55</div>
+        <div class="meta-info">Stand: Samstag, 11. Juli 2026 | 21:59</div>
     </div>
 
-    <div class="news-container">
-        <div class="news-item">
-            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31072900&#x2F;1783698818&#x2F;Img_4_3&#x2F;250&#x2F;Bildmontage-Schueler-in-einer-Schule-in-Bangui-Zentralafrikanische-Republik-2014.jpg" onerror="this.style.display='none'">
-            <h2>UN-Daten zur Weltbevölkerung: Wie sich die Welt bis 2080 verändert</h2>
-            <p>Nie zuvor lebten so viele Menschen gleichzeitig auf der Erde - und es werden täglich mehr. Die Weltbevölkerung schwillt UN-Daten zufolge weiter an, entwickelt sich regional jedoch höchst unterschiedlich. Deutschland schrumpft, andere Länder legen stark zu. Die heftigste Prognose betrifft China.</p>
-        </div>
-        <div class="news-item">
-            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067241&#x2F;1783599684&#x2F;Img_4_3&#x2F;250&#x2F;Blumenfelder-in-der-Lommatzscher-Pflege-Blumenfelder-in-der-Lommatzscher-Pflege-Die-wegen-ihrer-fruchtbaren-Boeden-als-Kornkammer-Sachsens-bekannte-Region-besitzt-dank-einer-gemeinsamen-Historie-bezeugt-durch-kulturlandschaftliche-Einheit-und-Baukultur-eine-starke-regionale-Identitaet.jpg" onerror="this.style.display='none'">
-            <h2>Protest-Irrsinn in Lommatzsch: &quot;Wir wollten Windkraft unbedingt ablehnen und bekommen jetzt das Gegenteil&quot;</h2>
-            <p>Lommatzsch hat zwei Windparks und einen Solarpark. Für die hoch verschuldete Gemeinde ein Segen. Der Haushalt wird mit den Einnahmen aus den Erneuerbaren saniert. Doch Windkraft polarisiert. Aus Protest lehnt der Gemeinderat das Repowering alter Anlagen ab. Laut der Bürgermeisterin in jeder Hinsicht ein Eigentor.</p>
-        </div>
-        <div class="news-item">
-            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31075202&#x2F;1783777625&#x2F;Img_4_3&#x2F;250&#x2F;DEU-Deutschland-Germany-Berlin-10-07-2026-Kai-Wegner-Landesvorsitzender-der-Berliner-CDU-und-Regierender-Buergermeister-von-Berlin-waehrend-der-Pressekonferenz-der-CDU-Berlin-zu-seinem-Ruecktritt-als-Spitzenkandidat-der-CDU-fuer-die-Abgeordnetenhauswahl-am-20.jpg" onerror="this.style.display='none'">
-            <h2>Berliner Regierungschef auf Abwegen: Warum kann ein Politiker nicht einfach die Wahrheit sagen?</h2>
-            <p>Statt einen Fehler einzugestehen, hat Kai Wegner gelogen. So gärte es über Monate hinweg, bis er aufgab und der Berliner CDU das größte Debakel ihrer jüngeren Geschichte bescherte. Warum hat er es mit Vertuschung versucht? Ein Tut-mir-leid wäre besser gewesen. Doch das kriegen Berufspolitiker kaum mehr hin.</p>
-        </div>
-        <div class="news-item">
-            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31075469&#x2F;1783785696&#x2F;Img_4_3&#x2F;250&#x2F;Peter-Tschentscher-SPD-Erster-Buergermeister-von-Hamburg-steht-auf-dem-Balkon-des-Rathauses.jpg" onerror="this.style.display='none'">
-            <h2>GKV-Reform eine &quot;Fehlleistung&quot; : SPD-Bürgermeister Tschentscher greift Bundesregierung scharf an</h2>
-            <p>Die Kritik kommt aus den eigenen Reihen: Hamburgs Bürgermeister Peter Tschentscher wirft der schwarz-roten Koalition eine verfehlte Steuer- und Finanzpolitik vor. Die Bundesregierung mache sich mit &quot;Steuergeschenken aus der Gießkanne&quot; handlungsunfähig.</p>
+    <div class="page-content">
+        <div class="news-container">
+            <div class="news-item">
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31072900&#x2F;1783698818&#x2F;Img_4_3&#x2F;250&#x2F;Bildmontage-Schueler-in-einer-Schule-in-Bangui-Zentralafrikanische-Republik-2014.jpg" onerror="this.style.display='none'">
+                <h2>UN-Daten zur Weltbevölkerung: Wie sich die Welt bis 2080 verändert</h2>
+                <p>Nie zuvor lebten so viele Menschen gleichzeitig auf der Erde - und es werden täglich mehr. Die Weltbevölkerung schwillt UN-Daten zufolge weiter an, entwickelt sich regional jedoch höchst unterschiedlich. Deutschland schrumpft, andere Länder legen stark zu. Die heftigste Prognose betrifft China.</p>
+            </div>
+            <div class="news-item">
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31067241&#x2F;1783599684&#x2F;Img_4_3&#x2F;250&#x2F;Blumenfelder-in-der-Lommatzscher-Pflege-Blumenfelder-in-der-Lommatzscher-Pflege-Die-wegen-ihrer-fruchtbaren-Boeden-als-Kornkammer-Sachsens-bekannte-Region-besitzt-dank-einer-gemeinsamen-Historie-bezeugt-durch-kulturlandschaftliche-Einheit-und-Baukultur-eine-starke-regionale-Identitaet.jpg" onerror="this.style.display='none'">
+                <h2>Protest-Irrsinn in Lommatzsch: &quot;Wir wollten Windkraft unbedingt ablehnen und bekommen jetzt das Gegenteil&quot;</h2>
+                <p>Lommatzsch hat zwei Windparks und einen Solarpark. Für die hoch verschuldete Gemeinde ein Segen. Der Haushalt wird mit den Einnahmen aus den Erneuerbaren saniert. Doch Windkraft polarisiert. Aus Protest lehnt der Gemeinderat das Repowering alter Anlagen ab. Laut der Bürgermeisterin in jeder Hinsicht ein Eigentor.</p>
+            </div>
+            <div class="news-item">
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31075202&#x2F;1783777625&#x2F;Img_4_3&#x2F;250&#x2F;DEU-Deutschland-Germany-Berlin-10-07-2026-Kai-Wegner-Landesvorsitzender-der-Berliner-CDU-und-Regierender-Buergermeister-von-Berlin-waehrend-der-Pressekonferenz-der-CDU-Berlin-zu-seinem-Ruecktritt-als-Spitzenkandidat-der-CDU-fuer-die-Abgeordnetenhauswahl-am-20.jpg" onerror="this.style.display='none'">
+                <h2>Berliner Regierungschef auf Abwegen: Warum kann ein Politiker nicht einfach die Wahrheit sagen?</h2>
+                <p>Statt einen Fehler einzugestehen, hat Kai Wegner gelogen. So gärte es über Monate hinweg, bis er aufgab und der Berliner CDU das größte Debakel ihrer jüngeren Geschichte bescherte. Warum hat er es mit Vertuschung versucht? Ein Tut-mir-leid wäre besser gewesen. Doch das kriegen Berufspolitiker kaum mehr hin.</p>
+            </div>
+            <div class="news-item">
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31075469&#x2F;1783785696&#x2F;Img_4_3&#x2F;250&#x2F;Peter-Tschentscher-SPD-Erster-Buergermeister-von-Hamburg-steht-auf-dem-Balkon-des-Rathauses.jpg" onerror="this.style.display='none'">
+                <h2>GKV-Reform eine &quot;Fehlleistung&quot; : SPD-Bürgermeister Tschentscher greift Bundesregierung scharf an</h2>
+                <p>Die Kritik kommt aus den eigenen Reihen: Hamburgs Bürgermeister Peter Tschentscher wirft der schwarz-roten Koalition eine verfehlte Steuer- und Finanzpolitik vor. Die Bundesregierung mache sich mit &quot;Steuergeschenken aus der Gießkanne&quot; handlungsunfähig.</p>
+            </div>
         </div>
 
         <div class="finance-box">
-            <!-- TradingView Widget mit vollen Daten (Kurs + Änderung) -->
             <div class="tradingview-widget-container">
               <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
               {
                 "width": "100%",
-                "height": "450",
+                "height": 500,
                 "symbolsGroups": [
                   { "name": "Favoriten", "symbols": [
-                    { "name": "XETR:NOVC" },
-                    { "name": "NASDAQ:NDX" },
-                    { "name": "CRYPTO:ADAUSD" },
-                    { "name": "CRYPTO:DOTUSD" }
+                    { "name": "XETR:NOVC", "displayName": "Novo Nordisk" },
+                    { "name": "NASDAQ:NDX", "displayName": "Nasdaq 100" },
+                    { "name": "CRYPTO:ADAUSD", "displayName": "Cardano (ADA)" },
+                    { "name": "CRYPTO:DOTUSD", "displayName": "Polkadot (DOT)" }
                   ]}
                 ],
                 "showSymbolLogo": true,
