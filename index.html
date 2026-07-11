@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=1200, initial-scale=1.0">
     <style>
         body {
-            width: 1200px;
+            width: 100vw; /* Nutzt immer die volle Displaybreite */
             height: 1600px;
             margin: 0;
             padding: 0;
@@ -40,6 +40,7 @@
             column-count: 2;
             column-gap: 40px;
             box-sizing: border-box;
+            width: 100%;
         }
         .news-item {
             margin-bottom: 30px;
@@ -67,14 +68,20 @@
 
     <div class="newspaper-header">
         <h1>Merseburger Post</h1>
-        <div class="meta-info" id="datetime"></div>
+        <div class="meta-info" id="datetime">Lade Zeit...</div>
     </div>
 
     <script>
-        const now = new Date();
-        document.getElementById('datetime').innerHTML = 
-            now.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) + 
-            " | " + now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+        function updateTime() {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+            const timeStr = now.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+            document.getElementById('datetime').innerHTML = dateStr + " | " + timeStr;
+        }
+        // Zeit sofort setzen
+        updateTime();
+        // Alle 30 Sekunden aktualisieren
+        setInterval(updateTime, 30000);
     </script>
 
     <div class="news-container">
