@@ -6,30 +6,40 @@
         body { width: 100vw; height: 100vh; margin: 0; padding: 20px; background: #f4f2ee; font-family: 'Times New Roman', serif; color: #000; display: flex; flex-direction: column; overflow: hidden; }
         
         .newspaper-header { text-align: center; padding-bottom: 10px; border-bottom: 8px solid #000; flex-shrink: 0; }
-        h1 { font-size: 140px; margin: 0; text-transform: uppercase; }
+        h1 { font-size: 130px; margin: 0; text-transform: uppercase; }
         .meta-info { font-size: 50px; margin-top: 5px; font-weight: bold; }
         
-        /* Container füllt den restlichen Platz und verteilt ihn gleichmäßig */
         .news-container { 
             display: flex; 
             flex-direction: column; 
             flex-grow: 1;
-            justify-content: space-between;
+            justify-content: space-evenly; /* Verteilt die 3 Artikel gleichmäßig */
             padding: 20px 0; 
             gap: 20px;
         }
+        
+        /* Layout: Bild links (Quadrat), Text rechts */
         .news-item { 
-            flex: 1; /* Jeder Artikel nimmt ein Drittel des freien Platzes ein */
-            display: flex;
-            flex-direction: column;
-            border-bottom: 2px solid #ccc;
+            display: flex; 
+            align-items: center; 
+            gap: 30px; 
+            border-bottom: 2px solid #ccc; 
             padding-bottom: 10px;
+            flex: 1;
             overflow: hidden;
         }
         
-        h2 { font-size: 60px; margin: 5px 0; line-height: 1.1; font-weight: 800; }
-        p { font-size: 38px; line-height: 1.3; margin: 0; }
-        .img { width: 100%; height: 250px; object-fit: cover; border: 4px solid #000; display: block; }
+        .img { 
+            width: 350px; /* Feste Breite für Quadrat-Optik */
+            height: 350px; 
+            object-fit: cover; 
+            border: 4px solid #000; 
+            flex-shrink: 0; 
+        }
+        
+        .text-content { display: flex; flex-direction: column; }
+        h2 { font-size: 50px; margin: 0 0 10px 0; line-height: 1.1; font-weight: 800; }
+        p { font-size: 32px; line-height: 1.3; margin: 0; }
     </style>
 </head>
 <body>
@@ -41,24 +51,31 @@
     <div class="news-container">
         <div class="news-item">
             <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31073819&#x2F;1783714723&#x2F;Img_4_3&#x2F;250&#x2F;BYD-Electric-And-Hybrid-Vehicles-Arrive-At-Argentina-s-Port-Of-Zarate-A-drone-view-shows-a-ship-and-electric-and-hybrid-vehicles-manufactured-by-Chinese-automaker-BYD-at-the-port-of-Zarate-Argentina-on-January-20-2026-Buenos-Aires-Argentina-PUBLICATIONxNOTxINxFRA-Copyright-xMatiasxBagliettox-originalFilename-baglietto-notitle260120-np0Hc.jpg" onerror="this.style.display='none'">
-            <h2>Druck aus China: Wie chinesische Autobauer deutschen Herstellern das Fürchten lehren</h2>
-            <p>Während hierzulande Autobauer wie Volkswagen Tausende Stellen abbauen, werden chinesische Wettbewerber immer stärker. Fünf Grafiken zeigen, wie sich die Kräfte im Automarkt verschoben haben - und warum chinesische Hersteller der Konkurrenz davongezogen sind.</p>
+            <div class="text-content">
+                <h2>Druck aus China: Wie chinesische Autobauer deutschen Herstellern das Fürchten lehren</h2>
+                <p>Während hierzulande Autobauer wie Volkswagen Tausende Stellen abbauen, werden chinesische Wettbewerber immer stärker. Fünf Grafiken zeigen, wie sich die Kräfte im Automarkt verschoben haben - und warum chinesische Hersteller der Konkurrenz davongezogen sind.</p>
+            </div>
         </div>
         <div class="news-item">
             <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31076348&#x2F;1783840787&#x2F;Img_4_3&#x2F;250&#x2F;Die-katarischen-Streitkraefte-wehren-einen-Raketenangriff-ab-Die-Vereinigten-Staaten-und-der-Iran-lieferten-sich-im-Rahmen-des-anhaltenden-Konflikts-um-die-Strasse-von-Hormus-gegenseitige-Angriffe.jpg" onerror="this.style.display='none'">
-            <h2>&quot;Haltet euer Wort oder zahlt&quot;: Iranische Revolutionsgarden: Haben US-Basen angegriffen</h2>
-            <p>Der Iran beschießt nicht nur Schiffe, sondern nimmt zuletzt auch wieder US-Militärbasen ins Visier. Zudem wirft das Mullah-Regime den USA Vertragsbruch vor.</p>
+            <div class="text-content">
+                <h2>&quot;Haltet euer Wort oder zahlt&quot;: Iranische Revolutionsgarden: Haben US-Basen angegriffen</h2>
+                <p>Der Iran beschießt nicht nur Schiffe, sondern nimmt zuletzt auch wieder US-Militärbasen ins Visier. Zudem wirft das Mullah-Regime den USA Vertragsbruch vor.</p>
+            </div>
         </div>
         <div class="news-item">
             <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31077020&#x2F;1783859436&#x2F;Img_4_3&#x2F;250&#x2F;Der-republikanische-Senator-Lindsey-Graham-beantwortet-in-der-Naehe-einer-Ausstellung-beschaedigter-russischer-Fahrzeuge-Fragen-der-Medien-Lindsey-ist-am-11-07-2026-nach-kurzer-und-schwerer-Krankheit-gestorben.jpg" onerror="this.style.display='none'">
-            <h2>Nach &quot;plötzlicher Erkrankung&quot;: US-Senator Lindsey Graham ist tot</h2>
-            <p>Er war einer der einflussreichsten Republikaner: Nun ist der US-Senator Lindsey Graham im Alter von 71 Jahren gestorben. Die republikanische Partei verliert damit einen scharfen Kritiker des Kreml. Der ukrainische Präsident Selenskyj zeigt sich &quot;zutiefst betrübt&quot;.</p>
+            <div class="text-content">
+                <h2>Nach &quot;plötzlicher Erkrankung&quot;: US-Senator Lindsey Graham ist tot</h2>
+                <p>Er war einer der einflussreichsten Republikaner: Nun ist der US-Senator Lindsey Graham im Alter von 71 Jahren gestorben. Die republikanische Partei verliert damit einen scharfen Kritiker des Kreml. Der ukrainische Präsident Selenskyj zeigt sich &quot;zutiefst betrübt&quot;.</p>
+            </div>
         </div>
     </div>
 
     <script>
         var now = new Date();
-        document.getElementById('time').innerText = now.toLocaleDateString('de-DE') + " | " + now.toLocaleTimeString('de-DE', {hour: '2-digit', minute:'2-digit'}) + " Uhr";
+        // Zeigt nur noch das Datum
+        document.getElementById('time').innerText = now.toLocaleDateString('de-DE');
     </script>
 </body>
 </html>
