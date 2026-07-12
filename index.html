@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        body { width: 100vw; height: 100vh; margin: 0; padding: 20px; background: #f4f2ee; font-family: 'Times New Roman', serif; color: #000; display: flex; flex-direction: column; overflow: hidden; }
+        body { 
+            width: 100vw; height: 100vh; margin: 0; padding: 20px; 
+            background: #f4f2ee; font-family: 'Times New Roman', serif; color: #000; 
+            display: flex; flex-direction: column; overflow: hidden; 
+        }
         
         .newspaper-header { text-align: center; padding-bottom: 10px; border-bottom: 8px solid #000; flex-shrink: 0; }
         h1 { font-size: 130px; margin: 0; text-transform: uppercase; }
         .meta-info { font-size: 50px; margin-top: 5px; font-weight: bold; }
         
         .news-container { 
-            display: flex; 
-            flex-direction: column; 
-            flex-grow: 1;
-            justify-content: space-evenly; /* Verteilt die 3 Artikel gleichmäßig */
-            padding: 20px 0; 
-            gap: 20px;
+            display: flex; flex-direction: column; flex-grow: 1;
+            justify-content: space-evenly; padding: 20px 0; gap: 20px;
         }
         
-        /* Layout: Bild links (Quadrat), Text rechts */
         .news-item { 
-            display: flex; 
-            align-items: center; 
-            gap: 30px; 
-            border-bottom: 2px solid #ccc; 
-            padding-bottom: 10px;
-            flex: 1;
-            overflow: hidden;
+            display: flex; align-items: center; gap: 40px; 
+            border-bottom: 2px solid #ccc; padding-bottom: 10px; flex: 1;
         }
         
+        /* Bild nimmt 60% der Breite ein */
         .img { 
-            width: 350px; /* Feste Breite für Quadrat-Optik */
-            height: 350px; 
-            object-fit: cover; 
-            border: 4px solid #000; 
+            width: 60%; height: 90%; 
+            object-fit: cover; border: 4px solid #000; 
             flex-shrink: 0; 
         }
         
-        .text-content { display: flex; flex-direction: column; }
-        h2 { font-size: 50px; margin: 0 0 10px 0; line-height: 1.1; font-weight: 800; }
-        p { font-size: 32px; line-height: 1.3; margin: 0; }
+        /* Text nimmt den Rest */
+        .text-content { display: flex; flex-direction: column; width: 40%; }
+        h2 { font-size: 45px; margin: 0 0 10px 0; line-height: 1.1; font-weight: 800; }
+        p { font-size: 30px; line-height: 1.3; margin: 0; }
     </style>
 </head>
 <body>
@@ -74,8 +68,8 @@
 
     <script>
         var now = new Date();
-        // Zeigt nur noch das Datum
-        document.getElementById('time').innerText = now.toLocaleDateString('de-DE');
+        var options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        document.getElementById('time').innerText = now.toLocaleDateString('de-DE', options);
     </script>
 </body>
 </html>
