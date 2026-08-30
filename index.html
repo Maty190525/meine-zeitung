@@ -10,9 +10,9 @@
         }
         
         .newspaper-header { 
-            text-align: center; padding-bottom: 8px; 
+            text-align: center; padding-bottom: 6px; 
             border-bottom: 4px solid #000; flex-shrink: 0; 
-            margin-bottom: 12px; /* Schafft Luft nach unten zum ersten Artikel */
+            margin-bottom: 8px; 
         }
         
         h1 { 
@@ -26,24 +26,24 @@
         
         .news-container { 
             display: flex; flex-direction: column; flex-grow: 1;
-            justify-content: space-between; /* Verteilt die Artikel gleichmäßig mit Abstand */
-            padding: 5px 0; 
+            justify-content: space-evenly; /* Gleichmäßige und kompakte Verteilung */
+            padding: 0; 
             min-height: 0;   
         }
         
         .news-item { 
             display: flex; 
-            align-items: flex-start; /* Startet oben, verhindert Überlaufen nach oben */
+            align-items: flex-start; 
             gap: 15px; 
             border-bottom: 2px solid #ccc; 
-            padding-bottom: 12px; /* Erzeugt eine sichtbare leere Zeile / Luft über der Linie */
-            margin-bottom: 8px;   /* Zusätzlicher Abstand zwischen den Artikeln */
+            padding-bottom: 8px; /* Kleiner, sauberer Abstand zur Linie */
+            margin-bottom: 0;   
             flex: 1;
             min-height: 0; 
         }
         
         .img { 
-            width: 58%; height: 90%; 
+            width: 58%; height: 92%; 
             object-fit: cover; border: 2px solid #000; 
             flex-shrink: 0; 
         }
