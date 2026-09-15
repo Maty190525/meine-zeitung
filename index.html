@@ -42,14 +42,23 @@
             min-height: 0; 
         }
         
-        /* Korrigierter Bild-Fix für stabile Darstellung auf dem E-Ink Display */
+        /* Bild-Container mit klarem Rahmen und Hintergrund, damit man sieht, ob der Platz da ist */
+        .img-container {
+            width: 58%;
+            height: 100%;
+            border: 2px solid #000;
+            background-color: #ddd;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
         .img { 
-            width: 58%; 
+            width: 100%; 
             height: 100%; 
             object-fit: cover; 
-            border: 2px solid #000; 
-            flex-shrink: 0; 
-            background-color: #e2dfdc; /* Zeigt einen dezenten Hintergrund falls ein Bild lädt */
         }
         
         .text-content { 
@@ -70,24 +79,27 @@
 
     <div class="news-container">
         <div class="news-item">
-            <!-- Mit onerror-Sicherung, damit das Layout bei defektem Bild nicht bricht -->
-            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31306427&#x2F;1789459074&#x2F;Img_4_3&#x2F;250&#x2F;608558195.jpg" onerror="this.style.opacity='0'">
+            <div class="img-container">
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31306427&#x2F;1789459074&#x2F;Img_4_3&#x2F;250&#x2F;608558195.jpg" onerror="this.remove();">
+            </div>
             <div class="text-content">
                 <h2>Trump rief Truppe 2019 ins Leben: USA bestätigen erstmals im All stationierte Waffen</h2>
                 <p>Der Kalte Krieg zwischen den USA und der Sowjetunion war auch von einem &quot;Rennen um das All&quot; geprägt. Nun bestätigen die USA erstmals, dass sie über Waffen im All verfügen. Dort ist Russland aber nicht der einzige Gegner. </p>
             </div>
         </div>
         <div class="news-item">
-            <!-- Mit onerror-Sicherung, damit das Layout bei defektem Bild nicht bricht -->
-            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31306257&#x2F;1789454829&#x2F;Img_4_3&#x2F;250&#x2F;619398289.jpg" onerror="this.style.opacity='0'">
+            <div class="img-container">
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31306257&#x2F;1789454829&#x2F;Img_4_3&#x2F;250&#x2F;619398289.jpg" onerror="this.remove();">
+            </div>
             <div class="text-content">
                 <h2>Polen aktiviert Luftverteidigung: Nato-Kampfjets schießen Drohne über Litauen ab</h2>
                 <p>Wieder einmal dringt eine Drohne ins baltische Litauen ein. Diesmal soll sie aus Belarus gestartet worden sein. Die Nato reagiert, Polen gibt den Beginn von &quot;Lufteinsätzen&quot; in seinem Luftraum bekannt.</p>
             </div>
         </div>
         <div class="news-item">
-            <!-- Mit onerror-Sicherung, damit das Layout bei defektem Bild nicht bricht -->
-            <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31306037&#x2F;1789447934&#x2F;Img_4_3&#x2F;250&#x2F;image.jpg" onerror="this.style.opacity='0'">
+            <div class="img-container">
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31306037&#x2F;1789447934&#x2F;Img_4_3&#x2F;250&#x2F;image.jpg" onerror="this.remove();">
+            </div>
             <div class="text-content">
                 <h2>Keine Neuregelung vor Midterms: Supreme Court beerdigt Trumps Briefwahl-Pläne</h2>
                 <p>Die Trump-Regierung will die Regeln für die Briefwahl ändern, und das noch vor den Zwischenwahlen. Dabei sind die Wahlunterlagen teilweise schon versendet. Jetzt scheitert das Vorhaben vor dem Supreme Court.</p>
@@ -96,12 +108,9 @@
     </div>
 
     <script>
-        // Dynamisches und sauberes deutsches Datumsformat
         var now = new Date();
         var options = { weekday: 'long', year: 'numeric', month: '2-digit', day: '2-digit' };
         document.getElementById('time').innerText = now.toLocaleDateString('de-DE', options);
-        
-        // Automatischer Reload alle 15 Minuten zur Stabilisierung
         setTimeout(function(){ window.location.reload(); }, 900000);
     </script>
 </body>
