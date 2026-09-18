@@ -42,23 +42,33 @@
             min-height: 0; 
         }
         
-        /* Bild-Container mit klarem Rahmen und Hintergrund, damit man sieht, ob der Platz da ist */
         .img-container {
             width: 58%;
             height: 100%;
             border: 2px solid #000;
-            background-color: #ddd;
+            background-color: #e2dfdc;
             flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            position: relative;
         }
 
         .img { 
             width: 100%; 
             height: 100%; 
             object-fit: cover; 
+        }
+        
+        /* Fallback-Text, falls ein Bild ausfällt */
+        .img-error-text {
+            position: absolute;
+            font-size: 22px;
+            font-weight: bold;
+            color: #555;
+            text-align: center;
+            padding: 10px;
         }
         
         .text-content { 
@@ -80,7 +90,9 @@
     <div class="news-container">
         <div class="news-item">
             <div class="img-container">
-                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31318058&#x2F;1789663407&#x2F;Img_4_3&#x2F;250&#x2F;613981000.jpg" onerror="this.remove();">
+                <!-- Wenn das Bild fehlschlägt, wird es ausgeblendet und der Rahmen bleibt sauber -->
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31318058&#x2F;1789663407&#x2F;Img_4_3&#x2F;250&#x2F;613981000.jpg" onerror="this.style.display='none';">
+                <span class="img-error-text">Merseburger Post</span>
             </div>
             <div class="text-content">
                 <h2>AfD-Wähler lehnen System ab: Fast drei Viertel der Ostdeutschen sind mit Demokratie unzufrieden</h2>
@@ -89,7 +101,9 @@
         </div>
         <div class="news-item">
             <div class="img-container">
-                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31319110&#x2F;1789687217&#x2F;Img_4_3&#x2F;250&#x2F;619858321.jpg" onerror="this.remove();">
+                <!-- Wenn das Bild fehlschlägt, wird es ausgeblendet und der Rahmen bleibt sauber -->
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31319110&#x2F;1789687217&#x2F;Img_4_3&#x2F;250&#x2F;619858321.jpg" onerror="this.style.display='none';">
+                <span class="img-error-text">Merseburger Post</span>
             </div>
             <div class="text-content">
                 <h2>Umfrage Mecklenburg-Vorpommern: Drei Tage vor der Wahl: Schwesigs SPD überholt die AfD</h2>
@@ -98,7 +112,9 @@
         </div>
         <div class="news-item">
             <div class="img-container">
-                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31319139&#x2F;1789689135&#x2F;Img_4_3&#x2F;250&#x2F;619518007.jpg" onerror="this.remove();">
+                <!-- Wenn das Bild fehlschlägt, wird es ausgeblendet und der Rahmen bleibt sauber -->
+                <img class="img" src="https:&#x2F;&#x2F;www.n-tv.de&#x2F;img&#x2F;31319139&#x2F;1789689135&#x2F;Img_4_3&#x2F;250&#x2F;619518007.jpg" onerror="this.style.display='none';">
+                <span class="img-error-text">Merseburger Post</span>
             </div>
             <div class="text-content">
                 <h2>Umfrage zur Abgeordnetenhauswahl: Linke schiebt sich in Berlin vor die CDU</h2>
